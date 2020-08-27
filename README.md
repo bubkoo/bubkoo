@@ -1,3 +1,3 @@
 <div align="center">
-  <h2>Hey, Tom 🐱!!! Jerry 🐭 moved my cheese 🍰</h2>
+  <h3>Hey, Tom 🐱!!! Jerry 🐭 moved my cheese 🍰</h3>
 </div>
