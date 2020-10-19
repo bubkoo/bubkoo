@@ -1,7 +1,7 @@
 <br>
+<h3 align="center">Hey, Tom 🐱 ~ Jerry 🐭 is moving my cheese 🍰.</h3>
 <br>
 <br>
-<p align="center"><h3>Hey, Tom 🐱 ~ Jerry 🐭 is moving my cheese 🍰 </h3></p>
 <br>
 <p align="center"><img src="https://raw.githubusercontent.com/bubkoo/bubkoo/master/images/jerry-right.png" width="480" /></p>
 <br>
