@@ -1,0 +1,29 @@
+name: Daily Saying
+on:
+  push:
+    branches:
+      - master
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: bubkoo/use-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          env_name: bot_token
+      - uses: wow-actions/daily-saying@v1
+        id: saying
+      - uses: wow-actions/update-file@v1
+        with:
+          GITHUB_TOKEN: ${{ env.bot_token }}
+          path: README.md
+          content: |
+            <h3 align="center" style="color:red">${{ steps.saying.outputs.date }}</h3>
+            <p align="center">${{ steps.saying.outputs.content }}</p>
+            <p align="center">${{ steps.saying.outputs.translation }}</p>
+            <p align="center"><img src="${{ steps.saying.outputs.best_picture }}"/></p>
+          commit_message: 'chore: daily saying [skip ci]'
+          opening_comment: '<!-- [START DAILY SAYING -->'
+          closing_comment: '<!-- [END DAILY SAYING -->'
