@@ -20,7 +20,7 @@ jobs:
           GITHUB_TOKEN: ${{ env.bot_token }}
           path: README.md
           content: |
-            <h3 align="center" style="color:red">${{ steps.saying.outputs.date }}</h3>
+            <h3 align="center">${{ steps.saying.outputs.date }}</h3>
             <p align="center">${{ steps.saying.outputs.content }}</p>
             <p align="center">${{ steps.saying.outputs.translation }}</p>
             <p align="center"><img src="${{ steps.saying.outputs.best_picture }}"/></p>
