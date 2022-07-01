@@ -1,9 +1,9 @@
 <!-- [START DAILY SAYING] -->
 <!-- Please keep comment here to allow auto update -->
-<h3 align="center">2022-06-30</h3>
-<p align="center">The perfection of personality is the foundation, and the establishment of wealth is the end.</p>
-<p align="center">人格的完善是本，财富的确立是末。</p>
-<p align="center"><img src="https://staticedu-wps.cache.iciba.com/image/099bd656f574e1ff645f5f6dafea698f.jpg"/></p>
+<h3 align="center">2022-07-01</h3>
+<p align="center">Without a great party, there will be no prosperity and well-being.</p>
+<p align="center">没有一个伟大的政党，就没有繁荣和幸福。</p>
+<p align="center"><img src="https://staticedu-wps.cache.iciba.com/image/d7568faeaff74d9c32204d548551f6e2.jpg"/></p>
 <!-- [END DAILY SAYING] -->
 
 <p align="center"><img alt="profile views" src="https://komarev.com/ghpvc/?username=bubkoo&color=brightgreen&style=flat-square&label=PROFILE+VIEWS" /></p>
