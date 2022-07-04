@@ -30,6 +30,10 @@ function getOptions() {
   }
 }
 
+export function padDateNumber(m: number) {
+  return m > 9 ? `${m}` : `0${m}`
+}
+
 async function run() {
   try {
     const options = getOptions()
@@ -43,9 +47,10 @@ async function run() {
     core.setOutput('svg', content)
 
     const now = new Date()
-    const filename = `${now.getFullYear()}-${
-      now.getMonth() + 1
-    }-${now.getDate()}.svg`
+    const yyyy = now.getFullYear()
+    const mm = padDateNumber(now.getMonth() + 1)
+    const dd = padDateNumber(now.getDate())
+    const filename = `${yyyy}-${mm}-${dd}.svg`
     const filepath = path.join(options.dir, filename)
     const res = await getContent(octokit, filepath)
     const oldContent = res

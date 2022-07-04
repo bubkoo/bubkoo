@@ -97,14 +97,14 @@ importers:
     specifiers:
       '@actions/core': ^1.2.6
       '@actions/github': ^5.0.0
-      '@coder-calendar/svg': ^1.0.3
+      '@coder-calendar/svg': ^1.0.4
       '@types/git-username': ^1.0.2
       '@vercel/ncc': ^0.34.0
       git-username: ^1.0.0
     dependencies:
       '@actions/core': 1.9.0
       '@actions/github': 5.0.3
-      '@coder-calendar/svg': 1.0.3
+      '@coder-calendar/svg': 1.0.4
       git-username: 1.0.0
     devDependencies:
       '@types/git-username': 1.0.2
@@ -493,10 +493,10 @@ packages:
       seedrandom: 3.0.5
     dev: false
 
-  /@coder-calendar/svg/1.0.3:
+  /@coder-calendar/svg/1.0.4:
     resolution:
       {
-        integrity: sha512-NhkI2NAXjF4oxj794ZkszOfE6B4nG+0VeJ2ZvLsdYteljlPdXy1iuB/n7E/kuwchneM+3q/J6l9S7D2yi5dWog==,
+        integrity: sha512-8gkrMbNILSWVfUzagHpXX0pyM69LNFk/Z24pfYVpbWsl3h6yfQzjpVRYpsclxFyKQ1zImbCtcRcZtJeMHDEK5A==,
       }
     dependencies:
       '@coder-calendar/core': 1.0.0
