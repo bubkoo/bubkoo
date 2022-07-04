@@ -38,7 +38,7 @@ async function run() {
     const content = generateSVG(username || '')
 
     core.debug(JSON.stringify(options, null, 2))
-    core.info(`git owner: ${username}`)
+    core.debug(`git owner: ${username}`)
 
     core.setOutput('svg', content)
 
