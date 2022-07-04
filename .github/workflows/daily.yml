@@ -30,7 +30,7 @@ jobs:
         id: calendar
         with:
           GITHUB_TOKEN: ${{ env.bot_token }}
-          path: resources/coder-calendar
+          dir: resources/coder-calendar
       - uses: wow-actions/daily-saying@v1
         id: saying
       - uses: wow-actions/update-file@v1
