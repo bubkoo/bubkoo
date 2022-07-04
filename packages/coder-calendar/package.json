@@ -23,6 +23,7 @@
     "git-username": "^1.0.0"
   },
   "devDependencies": {
-    "@types/git-username": "^1.0.2"
+    "@types/git-username": "^1.0.2",
+    "@vercel/ncc": "^0.34.0"
   }
 }
