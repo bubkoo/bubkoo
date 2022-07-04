@@ -19,7 +19,7 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^5.0.0",
-    "@coder-calendar/svg": "^1.0.1",
+    "@coder-calendar/svg": "^1.0.3",
     "git-username": "^1.0.0"
   },
   "devDependencies": {
