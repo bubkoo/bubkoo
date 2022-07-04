@@ -1,17 +1,36 @@
-name: Daily Saying
+name: Daily
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '0 0 * * *'
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.2
+      - name: Set node version to 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          registry-url: https://registry.npmjs.org/
+          cache: pnpm
+      - name: Install
+        run: pnpm install --no-frozen-lockfile
+      - name: Build
+        run: pnpm run build
       - uses: bubkoo/use-app-token@v1
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
           env_name: bot_token
+      - uses: ./packages/coder-calendar
+        id: calendar
+        with:
+          GITHUB_TOKEN: ${{ env.bot_token }}
+          path: resources/coder-calendar
       - uses: wow-actions/daily-saying@v1
         id: saying
       - uses: wow-actions/update-file@v1
@@ -26,3 +45,4 @@ jobs:
           commit_message: 'chore: daily saying [skip ci]'
           opening_comment: '<!-- [START DAILY SAYING] -->'
           closing_comment: '<!-- [END DAILY SAYING] -->'
+

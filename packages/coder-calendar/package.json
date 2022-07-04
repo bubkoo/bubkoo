@@ -1,0 +1,28 @@
+{
+  "name": "@bubkoo-actions/coder-calendar",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "action.yml"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "ncc build src/index.ts --minify --v8-cache",
+    "prebuild": "run-s clean"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^5.0.0",
+    "@coder-calendar/svg": "^1.0.1",
+    "git-username": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/git-username": "^1.0.2"
+  }
+}
