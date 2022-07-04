@@ -5,6 +5,7 @@ on:
       - master
   schedule:
     - cron: '0 0 * * *'
+    - cron: '0 16 * * *'
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -33,6 +34,12 @@ jobs:
           dir: resources/coder-calendar
       - uses: wow-actions/daily-saying@v1
         id: saying
+      - uses: wow-actions/download-upload@v1
+        id: upload
+        with:
+          GITHUB_TOKEN: ${{ env.bot_token }}
+          url: ${{ steps.saying.outputs.best_picture }}
+          dir: resources/daily-saying
       - uses: wow-actions/update-file@v1
         with:
           GITHUB_TOKEN: ${{ env.bot_token }}
@@ -41,7 +48,7 @@ jobs:
             <h3 align="center">${{ steps.saying.outputs.date }}</h3>
             <p align="center">${{ steps.saying.outputs.content }}</p>
             <p align="center">${{ steps.saying.outputs.translation }}</p>
-            <p align="center"><img src="${{ steps.saying.outputs.best_picture }}"/></p>
+            <p align="center"><img src="${{ steps.upload.outputs.filepath }}"/></p>
           commit_message: 'chore: daily saying [skip ci]'
           opening_comment: '<!-- [START DAILY SAYING] -->'
           closing_comment: '<!-- [END DAILY SAYING] -->'
