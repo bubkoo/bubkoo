@@ -46,8 +46,7 @@ async function run() {
     const filename = `${now.getFullYear()}-${
       now.getMonth() + 1
     }-${now.getDate()}.svg`
-    const filepath = path.join(path.dirname(options.dir), filename)
-
+    const filepath = path.join(options.dir, filename)
     const res = await getContent(octokit, filepath)
     const oldContent = res
       ? Buffer.from((res.data as any).content, 'base64').toString()
