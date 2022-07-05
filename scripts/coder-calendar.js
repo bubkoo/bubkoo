@@ -1,8 +1,10 @@
+const { generateSVG } = require('@coder-calendar/svg')
+
 function padDateNumber(m) {
   return m > 9 ? `${m}` : `0${m}`
 }
 
-module.exports = async ({ github, context, core, generateSVG }) => {
+module.exports = async ({ github, context, core }) => {
   const now = new Date()
   const yyyy = now.getFullYear()
   const mm = padDateNumber(now.getMonth() + 1)
@@ -32,9 +34,8 @@ module.exports = async ({ github, context, core, generateSVG }) => {
       ...context.repo,
       path: filepath,
       content: Buffer.from(content).toString('base64'),
-      message: `chore: ${
-        oldContent != null ? 'update' : 'generate'
-      } daily coder-calender [skip ci]`,
+      message: `chore: ${oldContent != null ? 'update' : 'generate'
+        } daily coder-calender [skip ci]`,
       sha: res ? res.data.sha : undefined,
     })
     core.info(`File "${filepath}" ${oldContent ? 'updated' : 'generated'}`)
