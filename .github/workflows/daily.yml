@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 16.x
       - name: Install
-        run: npm install @coder-calendar/svg
+        run: npm install @coder-calendar/svg tslib
       - uses: bubkoo/use-app-token@v1
         with:
           app_id: ${{ secrets.APP_ID }}
