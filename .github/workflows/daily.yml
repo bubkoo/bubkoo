@@ -31,7 +31,7 @@ jobs:
         id: calendar
         with:
           GITHUB_TOKEN: ${{ env.bot_token }}
-          dir: resources/coder-calendar
+          dir: assets/coder-calendar
       - uses: wow-actions/daily-saying@v1
         id: saying
       - uses: wow-actions/download-upload@v1
@@ -39,7 +39,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ env.bot_token }}
           url: ${{ steps.saying.outputs.best_picture }}
-          dir: resources/daily-saying
+          dir: assets/daily-saying
       - uses: wow-actions/update-file@v1
         with:
           GITHUB_TOKEN: ${{ env.bot_token }}
