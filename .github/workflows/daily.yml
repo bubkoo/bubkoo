@@ -11,12 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set node version to 16.x
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      - name: Install
-        run: npm install @coder-calendar/svg tslib
+      - run: npm ci
+      - run: npm install @coder-calendar/svg
       - uses: bubkoo/use-app-token@v1
         with:
           app_id: ${{ secrets.APP_ID }}
@@ -28,8 +27,10 @@ jobs:
           github-token: ${{ env.bot_token }}
           result-encoding: string
           script: |
+            const { generateSVG } = require('@coder-calendar/svg')
             const script = require('./scripts/coder-calendar.js')
-            return await script({github, context, core, generateSVG})
+            const svg = generateSVG('bubkoo')
+            return await script({github, context, core, svg})
       - uses: wow-actions/daily-saying@v1
         id: saying
       - uses: wow-actions/download-upload@v1

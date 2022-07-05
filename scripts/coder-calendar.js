@@ -1,10 +1,8 @@
-const { generateSVG } = require('@coder-calendar/svg')
-
 function padDateNumber(m) {
   return m > 9 ? `${m}` : `0${m}`
 }
 
-module.exports = async ({ github, context, core }) => {
+module.exports = async ({ github, context, core, svg: content }) => {
   const now = new Date()
   const yyyy = now.getFullYear()
   const mm = padDateNumber(now.getMonth() + 1)
@@ -12,7 +10,6 @@ module.exports = async ({ github, context, core }) => {
 
   const filename = `${yyyy}-${mm}-${dd}.svg`
   const filepath = `assets/coder-calendar/${filename}`
-  const content = generateSVG('bubkoo')
 
   const getContent = async () => {
     try {
