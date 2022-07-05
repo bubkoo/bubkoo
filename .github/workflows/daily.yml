@@ -14,7 +14,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      - run: npm ci
       - run: npm install @coder-calendar/svg
       - uses: bubkoo/use-app-token@v1
         with:
