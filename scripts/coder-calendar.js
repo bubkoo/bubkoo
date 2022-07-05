@@ -32,7 +32,7 @@ module.exports = async ({ github, context, core, svg: content }) => {
       path: filepath,
       content: Buffer.from(content).toString('base64'),
       message: `chore: ${oldContent != null ? 'update' : 'generate'
-        } daily coder-calender [skip ci]`,
+        } coder-calender svg [skip ci]`,
       sha: res ? res.data.sha : undefined,
     })
     core.info(`File "${filepath}" ${oldContent ? 'updated' : 'generated'}`)
