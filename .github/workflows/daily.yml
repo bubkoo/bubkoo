@@ -4,22 +4,19 @@ on:
     branches:
       - master
   schedule:
-    - cron: '0 0 * * *'
-    - cron: '0 16 * * *'
+    - cron: "0 0 * * *"
+    - cron: "0 16 * * *"
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.2
       - name: Set node version to 16.x
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          registry-url: https://registry.npmjs.org/
-          cache: pnpm
       - name: Install
-        run: pnpm install @coder-calendar/svg
+        run: npm install @coder-calendar/svg
       - uses: bubkoo/use-app-token@v1
         with:
           app_id: ${{ secrets.APP_ID }}
@@ -51,7 +48,6 @@ jobs:
             <p align="center">${{ steps.saying.outputs.content }}</p>
             <p align="center">${{ steps.saying.outputs.translation }}</p>
             <p align="center"><img src="${{ steps.upload.outputs.filepath }}"/></p>
-          commit_message: 'chore: daily saying [skip ci]'
-          opening_comment: '<!-- [START DAILY SAYING] -->'
-          closing_comment: '<!-- [END DAILY SAYING] -->'
-
+          commit_message: "chore: daily saying [skip ci]"
+          opening_comment: "<!-- [START DAILY SAYING] -->"
+          closing_comment: "<!-- [END DAILY SAYING] -->"
