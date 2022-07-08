@@ -30,13 +30,13 @@ jobs:
             return await script({github, context, core, svg})
       - uses: wow-actions/daily-saying@v1
         id: saying
-      - uses: wow-actions/download-upload@v1
-        id: upload
-        with:
-          GITHUB_TOKEN: ${{ env.bot_token }}
-          url: ${{ steps.saying.outputs.best_picture }}
-          dir: assets/daily-saying
-          commit_message: "chore: upload daily-saying image [skip ci]"
+      # - uses: wow-actions/download-upload@v1
+      #   id: upload
+      #   with:
+      #     GITHUB_TOKEN: ${{ env.bot_token }}
+      #     url: ${{ steps.saying.outputs.best_picture }}
+      #     dir: assets/daily-saying
+      #     commit_message: "chore: upload daily-saying image [skip ci]"
       - uses: wow-actions/update-file@v1
         with:
           GITHUB_TOKEN: ${{ env.bot_token }}
@@ -45,7 +45,7 @@ jobs:
             <h3 align="center">${{ steps.saying.outputs.date }}</h3>
             <p align="center">${{ steps.saying.outputs.content }}</p>
             <p align="center">${{ steps.saying.outputs.translation }}</p>
-            <p align="center"><img src="${{ steps.upload.outputs.filepath }}"/></p>
+            <p align="center"><img src="//images.weserv.nl/?url=${{ steps.saying.outputs.best_picture }}"/></p>
           commit_message: "chore: daily saying [skip ci]"
           opening_comment: "<!-- [START DAILY SAYING] -->"
           closing_comment: "<!-- [END DAILY SAYING] -->"
