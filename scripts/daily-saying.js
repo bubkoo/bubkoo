@@ -40,6 +40,10 @@ function invertColor(color, bw) {
   return `${pound ? '#' : ''}${rgb2hex(255 - r, 255 - g, 255 - b)}`
 }
 
+function padDateNumber(m) {
+  return m > 9 ? `${m}` : `0${m}`
+}
+
 const now = new Date()
 const yyyy = now.getFullYear()
 const mm = padDateNumber(now.getMonth() + 1)
