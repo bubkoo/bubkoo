@@ -110,19 +110,31 @@ module.exports = async ({ github, context, core, url }) => {
 
     const cachedUrl = `https://images.weserv.nl?blur=2&mod=0.5&url=${url}`
     const bgPath = await uploadBackgroundImage(github, context, cachedUrl)
-    const svgPath = path.join(targetDir, `${date}.svg`)
-    const svgContent = ``
-
-    const colors = await extractColors(path.join(context.cwd, bgPath))
+    const colors = await extractColors(path.join(process.cwd(), bgPath))
     core.info(JSON.stringify(colors, null, 2))
     colors.sort((a, b) => b.area - a.area)
     core.info(`main color: ${colors[0].hex}`)
 
     const invertedColor = invertColor(colors[0].hex, true)
     core.info(`inverted color: ${invertedColor}`)
-    return invertedColor
+
+    const svgPath = path.join(targetDir, `${date}.svg`)
+    const svgContent = `
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="540" viewBox="0 0 960 540">
+  <image href="${bgPath}" height="100%" width="100%"/>
+  <text transform="translate(480,270)" dy="-40" font-size="96">2022-07-12</text>
+  <text transform="translate(480,270)" dy="24" font-size="16">At that time, youth was blooming, with the sun blazing and wind kissing the treetop.</text>
+  <text transform="translate(480,270)" dy="56" font-size="16">人间骄阳正好，风过树梢，彼时他们正当年少。</text>
+  <style>
+  text {font-family: Helvetica, Arial, sans-serif; fill:${invertColor};  dominant-baseline:middle; text-anchor:middle;}
+  </style>
+</svg>
+    `.trim()
+
+    await createOrUpdateFile(github, context, svgPath, svgContent, 'daily saying')
+
+    return svgPath
   } catch (error) {
     core.info(error)
-    return '#ffffff';
   }
 }
