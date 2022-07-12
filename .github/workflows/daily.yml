@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: npm install @coder-calendar/svg tslib
+      - run: npm install @coder-calendar/svg tslib extract-colors node-fetch@2.6.6
       - uses: bubkoo/use-app-token@v1
         with:
           app_id: ${{ secrets.APP_ID }}
@@ -37,6 +37,15 @@ jobs:
       #     url: ${{ steps.saying.outputs.best_picture }}
       #     dir: assets/daily-saying
       #     commit_message: "chore: upload daily-saying image [skip ci]"
+      - uses: actions/github-script@v6
+        id: color
+        with:
+          github-token: ${{ env.bot_token }}
+          result-encoding: string
+          script: |
+            const script = require('./scripts/get-main-color.js')
+            const url = ${{ steps.saying.outputs.best_picture }}
+            return await script({github, context, core, url})
       - uses: wow-actions/update-file@v1
         with:
           GITHUB_TOKEN: ${{ env.bot_token }}
