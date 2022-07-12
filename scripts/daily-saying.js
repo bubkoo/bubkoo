@@ -113,7 +113,7 @@ module.exports = async ({ github, context, core, url }) => {
     const svgPath = path.join(targetDir, `${date}.svg`)
     const svgContent = ``
 
-    const colors = await extractColors(bgPath)
+    const colors = await extractColors(path.join(context.cwd, bgPath))
     core.info(JSON.stringify(colors, null, 2))
     colors.sort((a, b) => b.area - a.area)
     core.info(`main color: ${colors[0].hex}`)
