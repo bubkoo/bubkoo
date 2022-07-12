@@ -39,7 +39,6 @@ function invertColor(color, bw) {
   return `${pound ? '#' : ''}${rgb2hex(255 - r, 255 - g, 255 - b)}`
 }
 
-
 async function getContent(github, context, filepath) {
   try {
     return await github.rest.repos.getContent({
@@ -67,7 +66,6 @@ async function createOrUpdateFile(github, context, path, content, msg) {
   }
 }
 
-
 async function uploadBackgroundImage(github, context, date, url) {
   const res = await fetch(url)
   if (!res.ok) {
@@ -89,10 +87,6 @@ async function uploadBackgroundImage(github, context, date, url) {
 
   return filepath
 }
-
-function getInvertedColor(bgPath) {}
-
-
 
 module.exports = async ({ github, context, core, metadata }) => {
   try {

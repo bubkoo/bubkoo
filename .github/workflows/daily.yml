@@ -47,8 +47,8 @@ jobs:
             const metadata = {
               date: '${{ steps.saying.outputs.date }}',
               image: '${{ steps.saying.outputs.best_picture }}',
-              content: '${{ steps.saying.outputs.content }}'
-              translation: '${{ steps.saying.outputs.translation }}'
+              content: '${{ steps.saying.outputs.content }}',
+              translation: '${{ steps.saying.outputs.translation }}',
             }
             return await script({github, context, core, metadata})
       - uses: wow-actions/update-file@v1
