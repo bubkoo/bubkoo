@@ -43,7 +43,7 @@ jobs:
           github-token: ${{ env.bot_token }}
           result-encoding: string
           script: |
-            const script = require('./scripts/get-main-color.js')
+            const script = require('./scripts/daily-saying.js')
             const url = '${{ steps.saying.outputs.best_picture }}'
             return await script({github, context, core, url})
       - uses: wow-actions/update-file@v1
