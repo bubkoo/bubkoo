@@ -23,7 +23,7 @@ module.exports = async ({ github, context, core, url }) => {
     }
     const filepath = path.join(os.tmpdir(), filename)
     await streamPipeline(res.body, fs.createWriteStream(filepath))
-    const colors = extractColors(filepath)
+    const colors = await extractColors(filepath)
     core.info(JSON.stringify(colors, null, 2))
     colors.sort((a, b) => a.area - b.area)
     return colors[0].hex
