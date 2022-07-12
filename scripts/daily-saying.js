@@ -108,7 +108,7 @@ module.exports = async ({ github, context, core, metadata }) => {
   <text transform="translate(480,270)" dy="24" font-size="16">${metadata.content}</text>
   <text transform="translate(480,270)" dy="56" font-size="16">${metadata.translation}</text>
   <style>
-  text {font-family: Helvetica, Arial, sans-serif; fill:${invertColor};  dominant-baseline:middle; text-anchor:middle;}
+  text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor};  dominant-baseline:middle; text-anchor:middle;}
   </style>
 </svg>
     `.trim()
