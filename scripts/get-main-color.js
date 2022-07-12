@@ -1,8 +1,8 @@
-import os from 'os'
-import fs from 'fs'
-import path from 'path'
-import fetch from 'node-fetch'
-import extractColors from 'extract-colors'
+const os = require('os')
+const fs = require('fs')
+const path = require('path')
+const fetch = require('node-fetch')
+const extractColors = require('extract-colors')
 
 module.exports = async ({ github, context, core, url }) => {
   try {
