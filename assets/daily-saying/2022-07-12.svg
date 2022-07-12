@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="540" viewBox="0 0 960 540">
+  <image href="assets/daily-saying/2022-07-12.jpeg" height="100%" width="100%"/>
+  <text transform="translate(480,270)" dy="-40" font-size="96">2022-07-12</text>
+  <text transform="translate(480,270)" dy="24" font-size="16">Love rises in the east and falls in the west, romance lasts till death.</text>
+  <text transform="translate(480,270)" dy="56" font-size="16">爱意东升西落，浪漫至死不渝。</text>
+  <style>
+  text {font-family: Helvetica, Arial, sans-serif; fill:function invertColor(color, bw) {
+  const [r, g, b] = hex2rgb(color)
+  if (bw) {
+    // http://stackoverflow.com/a/3943023/112731
+    return r * 0.299 + g * 0.587 + b * 0.114 > 186 ? '#000000' : '#ffffff'
+  }
+
+  return `${pound ? '#' : ''}${rgb2hex(255 - r, 255 - g, 255 - b)}`
+};  dominant-baseline:middle; text-anchor:middle;}
+  </style>
+</svg>
