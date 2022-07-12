@@ -54,7 +54,7 @@ jobs:
             <h3 align="center">${{ steps.saying.outputs.date }}</h3>
             <p align="center">${{ steps.saying.outputs.content }}</p>
             <p align="center">${{ steps.saying.outputs.translation }}</p>
-            <p align="center"><img src="https://images.weserv.nl/?url=${{ steps.saying.outputs.best_picture }}"/></p>
+            <p align="center"><img src="https://images.weserv.nl/?blur=2&amp;mod=0.5&amp;url=${{ steps.saying.outputs.best_picture }}"/></p>
           commit_message: "chore: daily saying [skip ci]"
           opening_comment: "<!-- [START DAILY SAYING] -->"
           closing_comment: "<!-- [END DAILY SAYING] -->"
