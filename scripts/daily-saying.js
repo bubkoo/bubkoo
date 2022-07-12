@@ -1,11 +1,10 @@
-const os = require('os')
-const fs = require('fs')
-const util = require('util')
 const path = require('path')
 const mime = require('mime-types')
 const fetch = require('node-fetch')
 const { extractColors } = require('extract-colors')
-const streamPipeline = util.promisify(require('stream').pipeline)
+
+const targetDir = 'assets/daily-saying'
+
 
 function hex2rgb(hex) {
   const color = hex.indexOf('#') === 0 ? hex : `#${hex}`
@@ -40,16 +39,6 @@ function invertColor(color, bw) {
   return `${pound ? '#' : ''}${rgb2hex(255 - r, 255 - g, 255 - b)}`
 }
 
-function padDateNumber(m) {
-  return m > 9 ? `${m}` : `0${m}`
-}
-
-const now = new Date()
-const yyyy = now.getFullYear()
-const mm = padDateNumber(now.getMonth() + 1)
-const dd = padDateNumber(now.getDate())
-const date = `${yyyy}-${mm}-${dd}`
-const targetDir = 'assets/daily-saying'
 
 async function getContent(github, context, filepath) {
   try {
@@ -79,7 +68,7 @@ async function createOrUpdateFile(github, context, path, content, msg) {
 }
 
 
-async function uploadBackgroundImage(github, context, url) {
+async function uploadBackgroundImage(github, context, date, url) {
   const res = await fetch(url)
   if (!res.ok) {
     throw new Error(`unexpected response ${res.statusText}`)
@@ -105,11 +94,10 @@ function getInvertedColor(bgPath) {}
 
 
 
-module.exports = async ({ github, context, core, url }) => {
+module.exports = async ({ github, context, core, metadata }) => {
   try {
-
-    const cachedUrl = `https://images.weserv.nl?blur=2&mod=0.5&url=${url}`
-    const bgPath = await uploadBackgroundImage(github, context, cachedUrl)
+    const url = `https://images.weserv.nl?blur=2&mod=0.5&url=${metadata.image}`
+    const bgPath = await uploadBackgroundImage(github, context, metadata.date, url)
     const colors = await extractColors(path.join(process.cwd(), bgPath))
     core.info(JSON.stringify(colors, null, 2))
     colors.sort((a, b) => b.area - a.area)
@@ -118,20 +106,26 @@ module.exports = async ({ github, context, core, url }) => {
     const invertedColor = invertColor(colors[0].hex, true)
     core.info(`inverted color: ${invertedColor}`)
 
-    const svgPath = path.join(targetDir, `${date}.svg`)
+    const svgPath = path.join(targetDir, `${metadata.date}.svg`)
     const svgContent = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="540" viewBox="0 0 960 540">
   <image href="${bgPath}" height="100%" width="100%"/>
-  <text transform="translate(480,270)" dy="-40" font-size="96">2022-07-12</text>
-  <text transform="translate(480,270)" dy="24" font-size="16">At that time, youth was blooming, with the sun blazing and wind kissing the treetop.</text>
-  <text transform="translate(480,270)" dy="56" font-size="16">人间骄阳正好，风过树梢，彼时他们正当年少。</text>
+  <text transform="translate(480,270)" dy="-40" font-size="96">${metadata.date}</text>
+  <text transform="translate(480,270)" dy="24" font-size="16">${metadata.content}</text>
+  <text transform="translate(480,270)" dy="56" font-size="16">${metadata.translation}</text>
   <style>
   text {font-family: Helvetica, Arial, sans-serif; fill:${invertColor};  dominant-baseline:middle; text-anchor:middle;}
   </style>
 </svg>
     `.trim()
 
-    await createOrUpdateFile(github, context, svgPath, svgContent, 'daily saying')
+    await createOrUpdateFile(
+      github,
+      context,
+      svgPath,
+      Buffer.from(svgContent).toString('base64'),
+      'daily saying',
+    )
 
     return svgPath
   } catch (error) {

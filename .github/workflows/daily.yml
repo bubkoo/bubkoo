@@ -44,8 +44,13 @@ jobs:
           result-encoding: string
           script: |
             const script = require('./scripts/daily-saying.js')
-            const url = '${{ steps.saying.outputs.best_picture }}'
-            return await script({github, context, core, url})
+            const metadata = {
+              date: '${{ steps.saying.outputs.date }}',
+              image: '${{ steps.saying.outputs.best_picture }}',
+              content: '${{ steps.saying.outputs.content }}'
+              translation: '${{ steps.saying.outputs.translation }}'
+            }
+            return await script({github, context, core, metadata})
       - uses: wow-actions/update-file@v1
         with:
           GITHUB_TOKEN: ${{ env.bot_token }}
