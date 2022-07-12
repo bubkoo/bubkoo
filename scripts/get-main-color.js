@@ -2,7 +2,7 @@ const os = require('os')
 const fs = require('fs')
 const path = require('path')
 const fetch = require('node-fetch')
-const extractColors = require('extract-colors')
+const { extractColors } = require('extract-colors')
 
 module.exports = async ({ github, context, core, url }) => {
   try {
