@@ -8,9 +8,8 @@ const { extractColors } = require('extract-colors')
 const IMAGE_MOD = 0.5
 const IMAGE_BLUR = 2
 const dirname = 'daily-saying'
-const tempDir = path.join(os.tmpdir(), dirname)
 const repoDir = `assets/${dirname}`
-
+const tempDir = path.join(os.tmpdir(), dirname)
 
 function hex2rgb(hex) {
   const color = hex.indexOf('#') === 0 ? hex : `#${hex}`
@@ -72,7 +71,6 @@ async function download(url) {
   }
 }
 
-
 async function getContent(github, context, filepath) {
   try {
     return await github.rest.repos.getContent({
@@ -100,60 +98,39 @@ async function createOrUpdateFile(github, context, path, content, msg) {
   }
 }
 
-async function uploadBackgroundImage(github, context, date, url) {
-  const res = await fetch(url)
-  if (!res.ok) {
-    throw new Error(`unexpected response ${res.statusText}`)
-  }
-
-  let ext = path.extname(url)
-  if ((/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i).test(ext)) {
-    const type = res.headers.get('Content-Type')
-    ext = type ? `.${mime.extension(type) || 'png'}` : '.png'
-  }
-
-  const filepath = path.join(repoDir, `${date}${ext}`)
-
-  const buffer = await res.arrayBuffer()
-  const newContent = Buffer.from(buffer).toString('base64')
-
-  await createOrUpdateFile(github, context, filepath, newContent, 'daily saying background image')
-
-  return filepath
-}
-
 module.exports = async ({ github, context, core, metadata }) => {
   try {
-    const { filepath, datauri } = await download(metadata.image)
-    const colors = await extractColors(filepath)
-    core.info(JSON.stringify(colors, null, 2))
-    colors.sort((a, b) => b.area - a.area)
-    core.info(`main color: ${colors[0].hex}`)
-    const invertedColor = invertColor(colors[0].hex, true)
-    core.info(`inverted color: ${invertedColor}`)
+    core.info(JSON.stringify(metadata, null, 2))
+    //     const { filepath, datauri } = await download(metadata.image)
+    //     const colors = await extractColors(filepath)
+    //     core.info(JSON.stringify(colors, null, 2))
+    //     colors.sort((a, b) => b.area - a.area)
+    //     core.info(`main color: ${colors[0].hex}`)
+    //     const invertedColor = invertColor(colors[0].hex, true)
+    //     core.info(`inverted color: ${invertedColor}`)
 
-    const svgPath = path.join(repoDir, `${metadata.date}.svg`)
-    const svgContent = `
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="540" viewBox="0 0 960 540">
-  <image href="${datauri}" height="100%" width="100%"/>
-  <text transform="translate(480,270)" dy="-40" font-size="96">${metadata.date}</text>
-  <text transform="translate(480,270)" dy="24" font-size="16">${metadata.content}</text>
-  <text transform="translate(480,270)" dy="56" font-size="16">${metadata.translation}</text>
-  <style>
-  text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor};  dominant-baseline:middle; text-anchor:middle;}
-  </style>
-</svg>
-    `.trim()
+    //     const svgPath = path.join(repoDir, `${metadata.date}.svg`)
+    //     const svgContent = `
+    // <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="540" viewBox="0 0 960 540">
+    //   <image href="${datauri}" height="100%" width="100%"/>
+    //   <text transform="translate(480,270)" dy="-40" font-size="96">${metadata.date}</text>
+    //   <text transform="translate(480,270)" dy="24" font-size="16">${metadata.content}</text>
+    //   <text transform="translate(480,270)" dy="56" font-size="16">${metadata.translation}</text>
+    //   <style>
+    //     text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor}; dominant-baseline:middle; text-anchor:middle;}
+    //   </style>
+    // </svg>
+    //     `.trim()
 
-    await createOrUpdateFile(
-      github,
-      context,
-      svgPath,
-      Buffer.from(svgContent).toString('base64'),
-      'daily saying',
-    )
+    //     await createOrUpdateFile(
+    //       github,
+    //       context,
+    //       svgPath,
+    //       Buffer.from(svgContent).toString('base64'),
+    //       'daily saying',
+    //     )
 
-    return svgPath
+    //     return svgPath
   } catch (error) {
     core.info(error)
   }
