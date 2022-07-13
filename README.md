@@ -3,4 +3,4 @@
 <p align="center"><img src="assets/daily-saying/2022-07-13.svg"/></p>
 <!-- [END DAILY SAYING] -->
 
-<p align="center"><img alt="profile views" src="https://komarev.com/ghpvc/?username=bubkoo&color=brightgreen&style=flat-square&label=PROFILE+VIEWS" /></p>
+<!-- <p align="center"><img alt="profile views" src="https://komarev.com/ghpvc/?username=bubkoo&color=brightgreen&style=flat-square&label=PROFILE+VIEWS" /></p> -->

@@ -7,6 +7,10 @@ const { extractColors } = require('extract-colors')
 
 const IMAGE_MOD = 0.5
 const IMAGE_BLUR = 2
+const SVG_WIDTH = 840
+const SVG_HEIGHT = 360
+const COLOR_BLACK = '#0f0f0f'
+const COLOR_WHITE = '#f0f0f0'
 const dirname = 'daily-saying'
 const repoDir = `assets/${dirname}`
 const tempDir = path.join(os.tmpdir(), dirname)
@@ -38,14 +42,14 @@ function invertColor(color, bw) {
   const [r, g, b] = hex2rgb(color)
   if (bw) {
     // http://stackoverflow.com/a/3943023/112731
-    return r * 0.299 + g * 0.587 + b * 0.114 > 186 ? '#000000' : '#ffffff'
+    return r * 0.299 + g * 0.587 + b * 0.114 > 186 ? COLOR_BLACK : COLOR_WHITE``
   }
 
   return `${pound ? '#' : ''}${rgb2hex(255 - r, 255 - g, 255 - b)}`
 }
 
 async function download(url) {
-  const res = await fetch(`https://images.weserv.nl?blur=${IMAGE_BLUR}&mod=${IMAGE_MOD}&url=${url}`)
+  const res = await fetch(`https://images.weserv.nl?blur=${IMAGE_BLUR}&mod=${IMAGE_MOD}&w=${SVG_WIDTH}&h=${SVG_HEIGHT}&dpr=2&fit=cover&we&a=entropy&url=${url}`)
   if (!res.ok) {
     throw new Error(`unexpected response ${res.statusText}`)
   }
@@ -111,11 +115,13 @@ module.exports = async ({ github, context, core, metadata }) => {
 
     const svgPath = path.join(repoDir, `${metadata.date}.svg`)
     const svgContent = `
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="540" viewBox="0 0 960 540">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${SVG_WIDTH}" height="${SVG_HEIGHT}" viewBox="0 0 ${SVG_WIDTH} ${SVG_HEIGHT}">
   <image href="${datauri}" height="100%" width="100%"/>
-  <text transform="translate(480,270)" dy="-40" font-size="96">${metadata.date}</text>
-  <text transform="translate(480,270)" dy="24" font-size="16">${metadata.content}</text>
-  <text transform="translate(480,270)" dy="56" font-size="16">${metadata.translation}</text>
+  <g transform="translate(${SVG_WIDTH / 2},${SVG_HEIGHT / 2})">
+    <text dy="-80" font-size="96">${metadata.date}</text>
+    <text dy="20" font-size="18">${metadata.content}</text>
+    <text dy="60" font-size="18">${metadata.translation}</text>
+  </g>
   <style>
     text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor}; dominant-baseline:middle; text-anchor:middle;}
   </style>
