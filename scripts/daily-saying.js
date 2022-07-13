@@ -42,7 +42,7 @@ function invertColor(color, bw) {
   const [r, g, b] = hex2rgb(color)
   if (bw) {
     // http://stackoverflow.com/a/3943023/112731
-    return r * 0.299 + g * 0.587 + b * 0.114 > 186 ? COLOR_BLACK : COLOR_WHITE``
+    return r * 0.299 + g * 0.587 + b * 0.114 > 186 ? COLOR_BLACK : COLOR_WHITE
   }
 
   return `${pound ? '#' : ''}${rgb2hex(255 - r, 255 - g, 255 - b)}`
