@@ -38,7 +38,7 @@ jobs:
       #     dir: assets/daily-saying
       #     commit_message: "chore: upload daily-saying image [skip ci]"
       - uses: actions/github-script@v6
-        id: color
+        id: sayingSvg
         with:
           github-token: ${{ env.bot_token }}
           result-encoding: string
@@ -56,10 +56,7 @@ jobs:
           GITHUB_TOKEN: ${{ env.bot_token }}
           path: README.md
           content: |
-            <h3 align="center">${{ steps.saying.outputs.date }}</h3>
-            <p align="center">${{ steps.saying.outputs.content }}</p>
-            <p align="center">${{ steps.saying.outputs.translation }}</p>
-            <p align="center"><img src="https://images.weserv.nl/?blur=2&amp;mod=0.5&amp;url=${{ steps.saying.outputs.best_picture }}"/></p>
+            <p align="center"><img src="${{ steps.sayingSvg.outputs.result }}"/></p>
           commit_message: "chore: daily saying [skip ci]"
           opening_comment: "<!-- [START DAILY SAYING] -->"
           closing_comment: "<!-- [END DAILY SAYING] -->"

@@ -31,11 +31,11 @@ module.exports = async ({ github, context, core, svg: content }) => {
       ...context.repo,
       path: filepath,
       content: Buffer.from(content).toString('base64'),
-      message: `chore: ${oldContent != null ? 'update' : 'generate'
+      message: `chore: ${oldContent != null ? 'update' : 'create'
         } coder-calender svg [skip ci]`,
       sha: res ? res.data.sha : undefined,
     })
-    core.info(`File "${filepath}" ${oldContent ? 'updated' : 'generated'}`)
+    core.info(`File "${filepath}" ${oldContent ? 'updated' : 'created'}`)
   } else {
     core.info(`File "${filepath}" no need to update`)
   }

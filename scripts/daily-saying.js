@@ -92,7 +92,7 @@ async function createOrUpdateFile(github, context, path, content, msg) {
       ...context.repo,
       path: path,
       content: content,
-      message: `chore:${oldContent ? 'update' : 'upload'} ${msg} [skip ci]`,
+      message: `chore:${oldContent ? 'update' : 'create'} ${msg} [skip ci]`,
       sha: res ? res.data.sha : undefined,
     })
   }
@@ -127,7 +127,7 @@ module.exports = async ({ github, context, core, metadata }) => {
       context,
       svgPath,
       Buffer.from(svgContent).toString('base64'),
-      'daily saying',
+      'daily saying svg',
     )
 
     return svgPath
