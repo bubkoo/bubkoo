@@ -101,36 +101,36 @@ async function createOrUpdateFile(github, context, path, content, msg) {
 module.exports = async ({ github, context, core, metadata }) => {
   try {
     core.info(JSON.stringify(metadata, null, 2))
-    //     const { filepath, datauri } = await download(metadata.image)
-    //     const colors = await extractColors(filepath)
-    //     core.info(JSON.stringify(colors, null, 2))
-    //     colors.sort((a, b) => b.area - a.area)
-    //     core.info(`main color: ${colors[0].hex}`)
-    //     const invertedColor = invertColor(colors[0].hex, true)
-    //     core.info(`inverted color: ${invertedColor}`)
+    const { filepath, datauri } = await download(metadata.image)
+    const colors = await extractColors(filepath)
+    core.info(JSON.stringify(colors, null, 2))
+    colors.sort((a, b) => b.area - a.area)
+    core.info(`main color: ${colors[0].hex}`)
+    const invertedColor = invertColor(colors[0].hex, true)
+    core.info(`inverted color: ${invertedColor}`)
 
-    //     const svgPath = path.join(repoDir, `${metadata.date}.svg`)
-    //     const svgContent = `
-    // <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="540" viewBox="0 0 960 540">
-    //   <image href="${datauri}" height="100%" width="100%"/>
-    //   <text transform="translate(480,270)" dy="-40" font-size="96">${metadata.date}</text>
-    //   <text transform="translate(480,270)" dy="24" font-size="16">${metadata.content}</text>
-    //   <text transform="translate(480,270)" dy="56" font-size="16">${metadata.translation}</text>
-    //   <style>
-    //     text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor}; dominant-baseline:middle; text-anchor:middle;}
-    //   </style>
-    // </svg>
-    //     `.trim()
+    const svgPath = path.join(repoDir, `${metadata.date}.svg`)
+    const svgContent = `
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="540" viewBox="0 0 960 540">
+  <image href="${datauri}" height="100%" width="100%"/>
+  <text transform="translate(480,270)" dy="-40" font-size="96">${metadata.date}</text>
+  <text transform="translate(480,270)" dy="24" font-size="16">${metadata.content}</text>
+  <text transform="translate(480,270)" dy="56" font-size="16">${metadata.translation}</text>
+  <style>
+    text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor}; dominant-baseline:middle; text-anchor:middle;}
+  </style>
+</svg>
+      `.trim()
 
-    //     await createOrUpdateFile(
-    //       github,
-    //       context,
-    //       svgPath,
-    //       Buffer.from(svgContent).toString('base64'),
-    //       'daily saying',
-    //     )
+    await createOrUpdateFile(
+      github,
+      context,
+      svgPath,
+      Buffer.from(svgContent).toString('base64'),
+      'daily saying',
+    )
 
-    //     return svgPath
+    return svgPath
   } catch (error) {
     core.info(error)
   }

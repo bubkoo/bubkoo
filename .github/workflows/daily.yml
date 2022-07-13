@@ -42,7 +42,7 @@ jobs:
         with:
           github-token: ${{ env.bot_token }}
           result-encoding: string
-          script: >
+          script: |
             const script = require('./scripts/daily-saying.js')
             const metadata = {
               date: `${{ steps.saying.outputs.date }}`,
