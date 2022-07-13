@@ -1,9 +1,15 @@
+const os = require('os')
+const fs = require('fs')
 const path = require('path')
 const mime = require('mime-types')
 const fetch = require('node-fetch')
 const { extractColors } = require('extract-colors')
 
-const targetDir = 'assets/daily-saying'
+const IMAGE_MOD = 0.5
+const IMAGE_BLUR = 2
+const dirname = 'daily-saying'
+const tempDir = path.join(os.tmpdir(), dirname)
+const repoDir = `assets/${dirname}`
 
 
 function hex2rgb(hex) {
@@ -38,6 +44,34 @@ function invertColor(color, bw) {
 
   return `${pound ? '#' : ''}${rgb2hex(255 - r, 255 - g, 255 - b)}`
 }
+
+async function download(url) {
+  const res = await fetch(`https://images.weserv.nl?blur=${IMAGE_BLUR}&mod=${IMAGE_MOD}&url=${url}`)
+  if (!res.ok) {
+    throw new Error(`unexpected response ${res.statusText}`)
+  }
+
+  let filename = path.basename(url)
+  let ext = path.extname(filename)
+  if (!(/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i).test(ext)) {
+    const type = res.headers.get('Content-Type')
+    ext = type ? `.${mime.extension(type) || 'png'}` : '.png'
+    filename = `${new Date().getTime()}${ext}`
+  }
+
+  const filepath = path.join(tempDir, filename)
+  const buffer = await res.buffer()
+  const datauri = `data:${mime.lookup(filepath)};base64,${buffer.toString('base64')}`
+
+  fs.mkdirSync(tempDir, { recursive: true })
+  fs.appendFileSync(filepath, buffer)
+
+  return {
+    datauri,
+    filepath,
+  }
+}
+
 
 async function getContent(github, context, filepath) {
   try {
@@ -78,7 +112,7 @@ async function uploadBackgroundImage(github, context, date, url) {
     ext = type ? `.${mime.extension(type) || 'png'}` : '.png'
   }
 
-  const filepath = path.join(targetDir, `${date}${ext}`)
+  const filepath = path.join(repoDir, `${date}${ext}`)
 
   const buffer = await res.arrayBuffer()
   const newContent = Buffer.from(buffer).toString('base64')
@@ -90,20 +124,18 @@ async function uploadBackgroundImage(github, context, date, url) {
 
 module.exports = async ({ github, context, core, metadata }) => {
   try {
-    const url = `https://images.weserv.nl?blur=2&mod=0.5&url=${metadata.image}`
-    const bgPath = await uploadBackgroundImage(github, context, metadata.date, url)
-    const colors = await extractColors(path.join(process.cwd(), bgPath))
+    const { filepath, datauri } = await download(metadata.image)
+    const colors = await extractColors(filepath)
     core.info(JSON.stringify(colors, null, 2))
     colors.sort((a, b) => b.area - a.area)
     core.info(`main color: ${colors[0].hex}`)
-
     const invertedColor = invertColor(colors[0].hex, true)
     core.info(`inverted color: ${invertedColor}`)
 
-    const svgPath = path.join(targetDir, `${metadata.date}.svg`)
+    const svgPath = path.join(repoDir, `${metadata.date}.svg`)
     const svgContent = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="960" height="540" viewBox="0 0 960 540">
-  <image href="${bgPath}" height="100%" width="100%"/>
+  <image href="${datauri}" height="100%" width="100%"/>
   <text transform="translate(480,270)" dy="-40" font-size="96">${metadata.date}</text>
   <text transform="translate(480,270)" dy="24" font-size="16">${metadata.content}</text>
   <text transform="translate(480,270)" dy="56" font-size="16">${metadata.translation}</text>
