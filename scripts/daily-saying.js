@@ -49,7 +49,7 @@ function invertColor(color, bw) {
 }
 
 async function download(url) {
-  const res = await fetch(`https://images.weserv.nl?blur=${IMAGE_BLUR}&mod=${IMAGE_MOD}&w=${SVG_WIDTH}&h=${SVG_HEIGHT}&dpr=2&fit=cover&we&a=entropy&url=${url}`)
+  const res = await fetch(`https://images.weserv.nl?blur=${IMAGE_BLUR}&mod=${IMAGE_MOD}&url=${url}`)
   if (!res.ok) {
     throw new Error(`unexpected response ${res.statusText}`)
   }
@@ -118,9 +118,9 @@ module.exports = async ({ github, context, core, metadata }) => {
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${SVG_WIDTH}" height="${SVG_HEIGHT}" viewBox="0 0 ${SVG_WIDTH} ${SVG_HEIGHT}">
   <image href="${datauri}" height="100%" width="100%"/>
   <g transform="translate(${SVG_WIDTH / 2},${SVG_HEIGHT / 2})">
-    <text dy="-80" font-size="96">${metadata.date}</text>
-    <text dy="20" font-size="18">${metadata.content}</text>
-    <text dy="60" font-size="18">${metadata.translation}</text>
+    <text dy="-40" font-size="96">${metadata.date}</text>
+    <text dy="40" font-size="18">${metadata.content}</text>
+    <text dy="80" font-size="18">${metadata.translation}</text>
   </g>
   <style>
     text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor}; dominant-baseline:middle; text-anchor:middle;}
