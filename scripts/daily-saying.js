@@ -116,7 +116,7 @@ module.exports = async ({ github, context, core, metadata }) => {
     const svgPath = path.join(repoDir, `${metadata.date}.svg`)
     const svgContent = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${SVG_WIDTH}" height="${SVG_HEIGHT}" viewBox="0 0 ${SVG_WIDTH} ${SVG_HEIGHT}">
-  <image href="${datauri}" height="100%" width="100%"/>
+  <image href="${datauri}" width="100%"/>
   <g transform="translate(${SVG_WIDTH / 2},${SVG_HEIGHT / 2})">
     <text dy="-40" font-size="96">${metadata.date}</text>
     <text dy="40" font-size="18">${metadata.content}</text>
