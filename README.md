@@ -3,4 +3,8 @@
 <p align="center"><img src="assets/daily-saying/2022-07-29.svg"/></p>
 <!-- [END DAILY SAYING] -->
 
-<!-- <p align="center"><img alt="profile views" src="https://komarev.com/ghpvc/?username=bubkoo&color=brightgreen&style=flat-square&label=PROFILE+VIEWS" /></p> -->
+![](https://dots365.herokuapp.com/?layout=horizontal)
+
+<!-- <p align="center">
+<img alt="profile views" src="https://komarev.com/ghpvc/?username=bubkoo&color=brightgreen&style=flat-square&label=PROFILE+VIEWS" />
+</p> -->
