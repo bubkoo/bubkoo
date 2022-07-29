@@ -56,7 +56,10 @@ jobs:
           GITHUB_TOKEN: ${{ env.bot_token }}
           path: README.md
           content: |
-            <p align="center"><img src="${{ steps.sayingSvg.outputs.result }}"/></p>
+            <p align="center">
+              <img src="${{ steps.sayingSvg.outputs.result }}" height="196"/>
+              <img src="https://dots365.herokuapp.com" height="196"/>
+            </p>
           commit_message: "chore: daily saying [skip ci]"
           opening_comment: "<!-- [START DAILY SAYING] -->"
           closing_comment: "<!-- [END DAILY SAYING] -->"

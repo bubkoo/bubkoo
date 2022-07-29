@@ -119,8 +119,8 @@ module.exports = async ({ github, context, core, metadata }) => {
   <image href="${datauri}" width="100%"/>
   <g transform="translate(${SVG_WIDTH / 2},${SVG_HEIGHT / 2})">
     <text dy="-40" font-size="80">${metadata.date}</text>
-    <text dy="40" font-size="16">${metadata.content}</text>
-    <text dy="80" font-size="16">${metadata.translation}</text>
+    <text dy="40" font-size="28">${metadata.content}</text>
+    <text dy="96" font-size="28">${metadata.translation}</text>
   </g>
   <style>
     text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor}; dominant-baseline:middle; text-anchor:middle;}
