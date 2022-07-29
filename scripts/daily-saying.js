@@ -118,9 +118,9 @@ module.exports = async ({ github, context, core, metadata }) => {
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${SVG_WIDTH}" height="${SVG_HEIGHT}" viewBox="0 0 ${SVG_WIDTH} ${SVG_HEIGHT}">
   <image href="${datauri}" width="100%"/>
   <g transform="translate(${SVG_WIDTH / 2},${SVG_HEIGHT / 2})">
-    <text dy="-40" font-size="80">${metadata.date}</text>
-    <text dy="40" font-size="28">${metadata.content}</text>
-    <text dy="96" font-size="28">${metadata.translation}</text>
+    <text dy="-40" font-size="64">${metadata.date}</text>
+    <text dy="40" font-size="24">${metadata.content}</text>
+    <text dy="88" font-size="24">${metadata.translation}</text>
   </g>
   <style>
     text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor}; dominant-baseline:middle; text-anchor:middle;}
