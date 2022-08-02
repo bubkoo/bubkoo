@@ -58,7 +58,7 @@ jobs:
           content: |
             <p align="center">
               <img src="${{ steps.sayingSvg.outputs.result }}" height="196"/>
-              <img src="https://dots365.herokuapp.com" height="196"/>
+              <img src="https://dots365.herokuapp.com?d=${{ steps.saying.outputs.date }}" height="196"/>
             </p>
           commit_message: "chore: daily saying [skip ci]"
           opening_comment: "<!-- [START DAILY SAYING] -->"
