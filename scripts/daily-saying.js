@@ -113,14 +113,25 @@ module.exports = async ({ github, context, core, metadata }) => {
     const invertedColor = invertColor(colors[0].hex, true)
     core.info(`inverted color: ${invertedColor}`)
 
+    const textBaseSize = 24;
+    const enCharsPerLine = 72;
+    const zhCharsPerLine = 32;
+
+    const enLength = metadata.content.length;
+    const zhLength = metadata.translation.length;
+    const enEmSize = enCharsPerLine / enLength;
+    const zhEmSize = zhCharsPerLine / zhLength;
+    const enFontSize = enEmSize < 1 ? textBaseSize * enEmSize : textBaseSize
+    const zhFontSize = zhEmSize < 1 ? textBaseSize * zhEmSize : textBaseSize
+
     const svgPath = path.join(repoDir, `${metadata.date}.svg`)
     const svgContent = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="${SVG_WIDTH}" height="${SVG_HEIGHT}" viewBox="0 0 ${SVG_WIDTH} ${SVG_HEIGHT}">
   <image href="${datauri}" width="100%"/>
   <g transform="translate(${SVG_WIDTH / 2},${SVG_HEIGHT / 2})">
     <text dy="-40" font-size="64">${metadata.date}</text>
-    <text dy="40" font-size="24">${metadata.content}</text>
-    <text dy="88" font-size="24">${metadata.translation}</text>
+    <text dy="40" font-size="${enFontSize}">${metadata.content}</text>
+    <text dy="88" font-size="${zhFontSize}">${metadata.translation}</text>
   </g>
   <style>
     text {font-family: Helvetica, Arial, sans-serif; fill:${invertedColor}; dominant-baseline:middle; text-anchor:middle;}
