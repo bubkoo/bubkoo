@@ -21,6 +21,8 @@ module.exports = async ({ github, context, core }) => {
       })
     } catch (e) {}
 
+    console.log(res)
+
     if (res) {
       await github.rest.repos.deleteFile({
         ...context.repo,
