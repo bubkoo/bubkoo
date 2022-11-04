@@ -24,13 +24,14 @@ module.exports = async ({ github, context, core }) => {
     console.log(res)
 
     if (res) {
-      await github.rest.repos.deleteFile({
+      const deleteRes = await github.rest.repos.deleteFile({
         ...context.repo,
         path,
         message: 'finalize release [skip ci]',
         sha: res.data.sha,
         branch: context.ref,
       })
+      console.log(deleteRes)
     }
 
     await github.rest.pulls.merge({
