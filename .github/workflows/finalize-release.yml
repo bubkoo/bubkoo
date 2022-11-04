@@ -1,0 +1,21 @@
+name: Finalize Release
+on:
+  push:
+    branches:
+      - auto-release
+jobs:
+  crb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: wow-actions/use-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          env_name: bot_token
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{ env.bot_token }}
+          script: |
+            const action = require('./scripts/finalize-release.js')
+            return await action({github, context, core})
