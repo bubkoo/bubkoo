@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Make empty change
         run: |
-          touch .releasing
+          ${{ github.sha }} > .releasing
       - uses: wow-actions/use-app-token@v1
         with:
           app_id: ${{ secrets.APP_ID }}
@@ -22,4 +22,4 @@ jobs:
           branch: auto-release
           commit-message: "start release..."
           delete-branch: true
-          title: "chore: auto release [skip ci]"
+          title: "chore: semantic release [skip ci]"

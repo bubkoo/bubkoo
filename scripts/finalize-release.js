@@ -35,8 +35,6 @@ module.exports = async ({ github, context, core }) => {
       ...context.repo,
       pull_number: pr.number,
       merge_method: 'squash',
-      commit_title: `semantic release ([#${pr.number}](#${pr.number})) [skip ci]`,
-      // commit_message: ""
     })
   }
 }
