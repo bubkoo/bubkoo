@@ -1,7 +1,7 @@
 module.exports = async ({ github, context, core }) => {
   console.log(context)
 
-  const { prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+  const { data: prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
     ...context.repo,
     commit_sha: context.sha,
   });
