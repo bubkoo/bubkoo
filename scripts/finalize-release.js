@@ -34,8 +34,9 @@ module.exports = async ({ github, context, core }) => {
         sha: res.data.sha,
         branch: context.ref,
       })
+      core.info('".releasing" file deleted')
     } else {
-      core.info(`.releasing file not found`)
+      core.info(`".releasing" file not found`)
     }
 
     await delay(1000)
@@ -45,5 +46,7 @@ module.exports = async ({ github, context, core }) => {
       pull_number: pr.number,
       merge_method: 'squash',
     })
+
+    core.info('released')
   }
 }
