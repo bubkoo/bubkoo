@@ -1,5 +1,5 @@
 function delay(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms))
+  return new Promise((resolve) => {setTimeout(resolve, ms)})
 }
 
 module.exports = async ({ github, context, core }) => {
@@ -39,7 +39,7 @@ module.exports = async ({ github, context, core }) => {
       core.info(`".releasing" file not found`)
     }
 
-    await delay(1000)
+    await delay(3000)
 
     await github.rest.pulls.merge({
       ...context.repo,
