@@ -1,16 +1,9 @@
-
 module.exports = async ({ github, context, core }) => {
-  const path = '.releasing'
-  const res = await github.rest.repos.getContent({
-      ...context.repo,
-      path: path,
-    })
-  
   await github.rest.repos.deleteFile({
     ...context.repo,
-    path: '.releasing',
+    path: './.releasing',
     message: 'finalize release [skip ci]',
-    sha: res.data.sha,
+    sha: context.sha,
   })
 
   await github.rest.pulls.merge({
