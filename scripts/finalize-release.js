@@ -14,6 +14,7 @@ module.exports = async ({ github, context, core }) => {
         path,
         message: 'finalize release [skip ci]',
         sha: res.data.sha,
+        branch: context.ref,
       })
   }
 
