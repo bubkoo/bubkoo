@@ -20,6 +20,6 @@ jobs:
         with:
           token: ${{ env.bot_token }}
           branch: auto-release
-          commit-message: "start release [skip ci]"
+          commit-message: "start release..."
           delete-branch: true
           title: "chore: auto release [skip ci]"
