@@ -1,6 +1,5 @@
 module.exports = async ({ github, context, core }) => {
-  console.log(context)
-
+  // find pr associated with the current SHA
   const { data: prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
     ...context.repo,
     commit_sha: context.sha,
