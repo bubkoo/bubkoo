@@ -1,3 +1,7 @@
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(() => resolve, ms))
+}
+
 module.exports = async ({ github, context, core }) => {
   // find pr associated with the current SHA
   const { data: prs } = await github.rest.repos.listPullRequestsAssociatedWithCommit({
@@ -21,23 +25,25 @@ module.exports = async ({ github, context, core }) => {
       })
     } catch (e) {}
 
-    console.log(res)
 
     if (res) {
-      const deleteRes = await github.rest.repos.deleteFile({
+      await github.rest.repos.deleteFile({
         ...context.repo,
         path,
         message: 'finalize release [skip ci]',
         sha: res.data.sha,
         branch: context.ref,
       })
-      console.log(deleteRes)
+    } else {
+      core.info(`.releasing file not found`)
     }
 
-    // await github.rest.pulls.merge({
-    //   ...context.repo,
-    //   pull_number: pr.number,
-    //   merge_method: 'squash',
-    // })
+    await delay(1000)
+
+    await github.rest.pulls.merge({
+      ...context.repo,
+      pull_number: pr.number,
+      merge_method: 'squash',
+    })
   }
 }
