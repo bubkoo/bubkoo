@@ -1,13 +1,12 @@
 module.exports = async ({ github, context, core }) => {
-  console.log(context)
+  console.log(context,github)
   const path = '.releasing'
   const res = await github.rest.repos.getContent({
       ...context.repo,
       path,
       ref: context.ref,
     })
-  
-  console.log(res.data)
+
   if(res){
       await github.rest.repos.deleteFile({
         ...context.repo,
