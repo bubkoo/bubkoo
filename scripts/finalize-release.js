@@ -7,6 +7,7 @@ module.exports = async ({ github, context, core }) => {
       ref: context.ref,
     })
   
+  console.log(res.data)
   if(res){
       await github.rest.repos.deleteFile({
         ...context.repo,
