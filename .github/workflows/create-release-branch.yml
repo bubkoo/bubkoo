@@ -1,0 +1,25 @@
+name: Create Release Branch
+on:
+  push:
+    branches:
+      - master
+jobs:
+  crb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Make empty change
+        run: |
+          touch .releasing
+      - uses: wow-actions/use-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          env_name: bot_token
+      - uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ env.bot_token }}
+          branch: auto-release
+          commit-message: "start release [skip ci]"
+          delete-branch: true
+          title: "chore: auto release [skip ci]"
