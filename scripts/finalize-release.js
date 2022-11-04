@@ -34,10 +34,10 @@ module.exports = async ({ github, context, core }) => {
       console.log(deleteRes)
     }
 
-    await github.rest.pulls.merge({
-      ...context.repo,
-      pull_number: pr.number,
-      merge_method: 'squash',
-    })
+    // await github.rest.pulls.merge({
+    //   ...context.repo,
+    //   pull_number: pr.number,
+    //   merge_method: 'squash',
+    // })
   }
 }
