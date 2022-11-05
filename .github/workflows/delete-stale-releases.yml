@@ -27,7 +27,7 @@ name: 🚫　Delete Stale Releases
 #             @antv/x6-angular-shape@**
 #             @antv/x6-react-components@**
 
-delete all releases and tag
+# delete all releases and tag
 on:
   push:
     branches:
