@@ -45,11 +45,11 @@ module.exports = async ({ github, context, core }) => {
       core.info(`delaying ${i + 1}s ...`)
     }
 
-    await github.rest.pulls.merge({
-      ...context.repo,
-      pull_number: pr.number,
-      merge_method: 'squash',
-    })
+    // await github.rest.pulls.merge({
+    //   ...context.repo,
+    //   pull_number: pr.number,
+    //   merge_method: 'squash',
+    // })
 
     core.info('released')
   }
