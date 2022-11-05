@@ -1,6 +1,7 @@
 {
   "branches": [
     "auto-release",
+    "master",
     "next",
     "next-major",
     {
