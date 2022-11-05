@@ -1,16 +1,24 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@semantic-release-monorepo/cli': ^1.0.28
-  '@semantic-release/changelog': ^6.0.1
-  '@semantic-release/git': ^10.0.1
-  semantic-release: ^19.0.5
+importers:
 
-dependencies:
-  '@semantic-release-monorepo/cli': 1.0.29_semantic-release@19.0.5
-  '@semantic-release/changelog': 6.0.1_semantic-release@19.0.5
-  '@semantic-release/git': 10.0.1_semantic-release@19.0.5
-  semantic-release: 19.0.5
+  .:
+    specifiers:
+      '@semantic-release-monorepo/cli': ^1.0.30
+      '@semantic-release/changelog': ^6.0.1
+      '@semantic-release/git': ^10.0.1
+      semantic-release: ^19.0.5
+    dependencies:
+      '@semantic-release-monorepo/cli': 1.0.30_semantic-release@19.0.5
+      '@semantic-release/changelog': 6.0.1_semantic-release@19.0.5
+      '@semantic-release/git': 10.0.1_semantic-release@19.0.5
+      semantic-release: 19.0.5
+
+  packages/a:
+    specifiers: {}
+
+  packages/b:
+    specifiers: {}
 
 packages:
 
@@ -210,14 +218,14 @@ packages:
       '@octokit/openapi-types': 14.0.0
     dev: false
 
-  /@semantic-release-monorepo/cli/1.0.29_semantic-release@19.0.5:
-    resolution: {integrity: sha512-bdPnBdnoYQMQwF1FepleuJW3VOZl7Qru28Z0D8D8szuUNFfcZi9KGV7OAT6NMiG3Qsi/7cLU/yD9LVe7+/rObw==}
+  /@semantic-release-monorepo/cli/1.0.30_semantic-release@19.0.5:
+    resolution: {integrity: sha512-oV+zHKo40Kj0+bmVF0ny63c0d5Ckv1eADfg0bvBlrLBNinw+zzmWByMHNjBzW/HsIVhxA5fknuCEI1uXPXtjhA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     peerDependencies:
       semantic-release: ^19.x
     dependencies:
-      '@semantic-release-monorepo/core': 1.2.14_semantic-release@19.0.5
+      '@semantic-release-monorepo/core': 1.2.15_semantic-release@19.0.5
       lodash: 4.17.21
       meow: 10.1.5
       semantic-release: 19.0.5
@@ -225,8 +233,8 @@ packages:
       - supports-color
     dev: false
 
-  /@semantic-release-monorepo/core/1.2.14_semantic-release@19.0.5:
-    resolution: {integrity: sha512-ibEgVLd6lc8i5mivPPzel4QnRoReqDQThC5AHGP9uqzmmFJynmc8h8qJwl2eznd2tqQ8kB+SdQ9FEYqadPrzpA==}
+  /@semantic-release-monorepo/core/1.2.15_semantic-release@19.0.5:
+    resolution: {integrity: sha512-N1CwUiTv9srQ23B+FCuM4ZwvZua89PpoPusgolN11wmbd9/I/dgiQZSc5aZLc5lAOanoYfdt6bVnQb7gQXyHuQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       semantic-release: ^19.x
