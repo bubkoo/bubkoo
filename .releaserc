@@ -1,14 +1,8 @@
 {
   "branches": [
-    "+([0-9])?(.{+([0-9]),x}).x",
-    "master",
+    "auto-release",
     "next",
     "next-major",
-    {
-      "name": "auto-release",
-      "channel": false,
-      "prerelease": false
-    },
     {
       "name": "beta",
       "prerelease": true
