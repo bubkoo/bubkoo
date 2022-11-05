@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      # - run: |
-      #     echo "${{ github.sha }}" > .releasing
+      - run: |
+          echo "${{ github.sha }}" > .releasing
       - uses: wow-actions/use-app-token@v1
         with:
           app_id: ${{ secrets.APP_ID }}

@@ -17,28 +17,28 @@ module.exports = async ({ github, context, core }) => {
     prs[0]
 
   if (pr) {
-    // const path = '.releasing'
-    // let res
-    // try {
-    //   res = await github.rest.repos.getContent({
-    //     ...context.repo,
-    //     path,
-    //     ref: context.ref,
-    //   })
-    // } catch (e) {}
+    const path = '.releasing'
+    let res
+    try {
+      res = await github.rest.repos.getContent({
+        ...context.repo,
+        path,
+        ref: context.ref,
+      })
+    } catch (e) {}
 
-    // if (res) {
-    //   await github.rest.repos.deleteFile({
-    //     ...context.repo,
-    //     path,
-    //     message: 'finalize release [skip ci]',
-    //     sha: res.data.sha,
-    //     branch: context.ref,
-    //   })
-    //   core.info('".releasing" file deleted')
-    // } else {
-    //   core.info(`".releasing" file not found`)
-    // }
+    if (res) {
+      await github.rest.repos.deleteFile({
+        ...context.repo,
+        path,
+        message: 'finalize release [skip ci]',
+        sha: res.data.sha,
+        branch: context.ref,
+      })
+      core.info('".releasing" file deleted')
+    } else {
+      core.info(`".releasing" file not found`)
+    }
 
     for (let i = 0; i < 5; i++) {
       await delay(1000)
