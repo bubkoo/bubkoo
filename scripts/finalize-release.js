@@ -31,7 +31,7 @@ module.exports = async ({ github, context, core }) => {
       await github.rest.repos.deleteFile({
         ...context.repo,
         path,
-        message: 'finalize release [skip ci]',
+        message: 'finish semantic release [skip ci]',
         sha: res.data.sha,
         branch: context.ref,
       })

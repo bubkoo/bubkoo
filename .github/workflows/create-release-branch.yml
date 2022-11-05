@@ -19,7 +19,7 @@ jobs:
         with:
           token: ${{ env.bot_token }}
           branch: auto-release
-          commit-message: "trigger semantic release..."
+          commit-message: "satrt semantic release..."
           delete-branch: true
           labels: semantic-release
           title: "chore: semantic release [skip ci]"
