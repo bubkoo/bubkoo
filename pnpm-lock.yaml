@@ -4,12 +4,12 @@ importers:
 
   .:
     specifiers:
-      '@semantic-release-monorepo/cli': ^1.0.30
+      '@semantic-release-monorepo/cli': ^2.0.0
       '@semantic-release/changelog': ^6.0.1
       '@semantic-release/git': ^10.0.1
       semantic-release: ^19.0.5
     dependencies:
-      '@semantic-release-monorepo/cli': 1.0.30_semantic-release@19.0.5
+      '@semantic-release-monorepo/cli': 2.0.0_semantic-release@19.0.5
       '@semantic-release/changelog': 6.0.1_semantic-release@19.0.5
       '@semantic-release/git': 10.0.1_semantic-release@19.0.5
       semantic-release: 19.0.5
@@ -218,14 +218,14 @@ packages:
       '@octokit/openapi-types': 14.0.0
     dev: false
 
-  /@semantic-release-monorepo/cli/1.0.30_semantic-release@19.0.5:
-    resolution: {integrity: sha512-oV+zHKo40Kj0+bmVF0ny63c0d5Ckv1eADfg0bvBlrLBNinw+zzmWByMHNjBzW/HsIVhxA5fknuCEI1uXPXtjhA==}
+  /@semantic-release-monorepo/cli/2.0.0_semantic-release@19.0.5:
+    resolution: {integrity: sha512-3g4StmHvlGIjHvZP6JGXHQgIBLhES1URK/LsFyQ2Oy1IjM87gMBXierFpp51C/x6COVrCfcEe4e6jUqjp2uYZg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     peerDependencies:
       semantic-release: ^19.x
     dependencies:
-      '@semantic-release-monorepo/core': 1.2.15_semantic-release@19.0.5
+      '@semantic-release-monorepo/core': 2.0.0_semantic-release@19.0.5
       lodash: 4.17.21
       meow: 10.1.5
       semantic-release: 19.0.5
@@ -233,8 +233,8 @@ packages:
       - supports-color
     dev: false
 
-  /@semantic-release-monorepo/core/1.2.15_semantic-release@19.0.5:
-    resolution: {integrity: sha512-N1CwUiTv9srQ23B+FCuM4ZwvZua89PpoPusgolN11wmbd9/I/dgiQZSc5aZLc5lAOanoYfdt6bVnQb7gQXyHuQ==}
+  /@semantic-release-monorepo/core/2.0.0_semantic-release@19.0.5:
+    resolution: {integrity: sha512-3LyJELECiNPln7DAYk+B9oaZAAQFOeceNJOqpBi06oYO0BUyqofZVzxqpj6fAWA1gNeLdxpTgQWGPvY9vZkMdA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       semantic-release: ^19.x
