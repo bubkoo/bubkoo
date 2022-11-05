@@ -1,8 +1,8 @@
 name: Daily
 on:
-  push:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
   schedule:
     - cron: "0 0 * * *"
     - cron: "0 16 * * *"
