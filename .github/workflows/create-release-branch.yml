@@ -1,8 +1,8 @@
 name: 🚀　Create Release Branch
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 jobs:
   crb:
     runs-on: ubuntu-latest

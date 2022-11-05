@@ -4,6 +4,7 @@ name: 🚀　Release
 on:
   push:
     branches:
+      - master
       - auto-release
       - next
       - next-major
