@@ -1,8 +1,8 @@
 <!-- [START DAILY SAYING] -->
 <!-- Please keep comment here to allow auto-update -->
 <p align="center">
-  <img src="assets/daily-saying/2022-11-17.svg" height="196"/>
-  <img src="https://dots365.herokuapp.com?d=2022-11-17" height="196"/>
+  <img src="assets/daily-saying/2022-11-18.svg" height="196"/>
+  <img src="https://dots365.herokuapp.com?d=2022-11-18" height="196"/>
 </p>
 <!-- [END DAILY SAYING] -->
 
