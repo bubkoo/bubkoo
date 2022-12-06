@@ -1,5 +1,5 @@
 <!-- [START DAILY SAYING] -->
-<!-- Please keep comment here to allow auto-update -->
+<!-- Please keep comment here to allow auto-update --> 
 <p align="center">
   <img src="assets/daily-saying/2022-12-05.svg" height="196"/>
   <img src="https://dots365.onrender.com?d=2022-12-05" height="196"/>
