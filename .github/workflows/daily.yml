@@ -57,7 +57,7 @@ jobs:
           content: |
             <p align="center">
               <img src="${{ steps.sayingSvg.outputs.result }}" height="196"/>
-              <img src="https://dots365.onrender.com?d=${{ steps.saying.outputs.date }}" height="196"/>
+              <img src="https://365dots.vercel.app?d=${{ steps.saying.outputs.date }}" height="196"/>
             </p>
           commit_message: "chore: daily saying [skip ci]"
           opening_comment: "<!-- [START DAILY SAYING] -->"
