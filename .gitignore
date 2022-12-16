@@ -2,9 +2,3 @@
 .env
 node_modules
 *.log
-coverage
-es
-esm
-lib
-dist
-assets

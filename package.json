@@ -1,0 +1,28 @@
+{
+  "name": "@bubkoo/server",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@365dots/svg": "^1.0.0",
+    "express": "^4.18.2",
+    "image-size": "^1.0.2",
+    "lodash.camelcase": "^4.3.0",
+    "mime-types": "^2.1.35",
+    "node-fetch": "^2.6.7"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/bubkoo/365dots",
+  "bugs": {
+    "url": "https://github.com/bubkoo/365dots/issues"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
