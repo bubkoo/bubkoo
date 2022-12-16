@@ -1,0 +1,16 @@
+name: Daily
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    # - cron: "0 0 * * *"
+    - cron: "0 16 * * *"
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/purge-readme@v1
+      - run: |
+          curl https://bubkoo-server.vercel.app/365dots
+          curl https://bubkoo-server.vercel.app/daily-saying
