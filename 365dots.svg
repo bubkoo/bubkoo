@@ -1,0 +1,752 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="340" height="175" viewBox="0 0 340 175">
+  <rect width="340" height="175" fill="#000" />
+  <g transform="translate(0, 24)">
+    <text class="text-year" transform="translate(15, 0)">2026</text>
+    <text class="text-percent" transform="translate(170, 0)">90%</text>
+    <text class="text-progress" transform="translate(325, 0)">329/365</text>
+  </g>
+  <g transform="translate(15, 40)" fill="#6FF2E9" stroke-width="0" opacity="0.3" >
+    <circle cx="5" cy="5"  />
+    <circle cx="15" cy="5"  />
+    <circle cx="25" cy="5"  />
+    <circle cx="35" cy="5"  />
+    <circle cx="45" cy="5"  />
+    <circle cx="55" cy="5"  />
+    <circle cx="65" cy="5"  />
+    <circle cx="75" cy="5"  />
+    <circle cx="85" cy="5"  />
+    <circle cx="95" cy="5"  />
+    <circle cx="105" cy="5"  />
+    <circle cx="115" cy="5"  />
+    <circle cx="125" cy="5"  />
+    <circle cx="135" cy="5"  />
+    <circle cx="145" cy="5"  />
+    <circle cx="155" cy="5"  />
+    <circle cx="165" cy="5"  />
+    <circle cx="175" cy="5"  />
+    <circle cx="185" cy="5"  />
+    <circle cx="195" cy="5"  />
+    <circle cx="205" cy="5"  />
+    <circle cx="215" cy="5"  />
+    <circle cx="225" cy="5"  />
+    <circle cx="235" cy="5"  />
+    <circle cx="245" cy="5"  />
+    <circle cx="255" cy="5"  />
+    <circle cx="265" cy="5"  />
+    <circle cx="275" cy="5"  />
+    <circle cx="285" cy="5"  />
+    <circle cx="295" cy="5"  />
+    <circle cx="305" cy="5"  />
+    <circle cx="20" cy="15"  />
+    <circle cx="30" cy="15"  />
+    <circle cx="40" cy="15"  />
+    <circle cx="50" cy="15"  />
+    <circle cx="60" cy="15"  />
+    <circle cx="70" cy="15"  />
+    <circle cx="80" cy="15"  />
+    <circle cx="90" cy="15"  />
+    <circle cx="100" cy="15"  />
+    <circle cx="110" cy="15"  />
+    <circle cx="120" cy="15"  />
+    <circle cx="130" cy="15"  />
+    <circle cx="140" cy="15"  />
+    <circle cx="150" cy="15"  />
+    <circle cx="160" cy="15"  />
+    <circle cx="170" cy="15"  />
+    <circle cx="180" cy="15"  />
+    <circle cx="190" cy="15"  />
+    <circle cx="200" cy="15"  />
+    <circle cx="210" cy="15"  />
+    <circle cx="220" cy="15"  />
+    <circle cx="230" cy="15"  />
+    <circle cx="240" cy="15"  />
+    <circle cx="250" cy="15"  />
+    <circle cx="260" cy="15"  />
+    <circle cx="270" cy="15"  />
+    <circle cx="280" cy="15"  />
+    <circle cx="290" cy="15"  />
+    <circle cx="5" cy="25"  />
+    <circle cx="15" cy="25"  />
+    <circle cx="25" cy="25"  />
+    <circle cx="35" cy="25"  />
+    <circle cx="45" cy="25"  />
+    <circle cx="55" cy="25"  />
+    <circle cx="65" cy="25"  />
+    <circle cx="75" cy="25"  />
+    <circle cx="85" cy="25"  />
+    <circle cx="95" cy="25"  />
+    <circle cx="105" cy="25"  />
+    <circle cx="115" cy="25"  />
+    <circle cx="125" cy="25"  />
+    <circle cx="135" cy="25"  />
+    <circle cx="145" cy="25"  />
+    <circle cx="155" cy="25"  />
+    <circle cx="165" cy="25"  />
+    <circle cx="175" cy="25"  />
+    <circle cx="185" cy="25"  />
+    <circle cx="195" cy="25"  />
+    <circle cx="205" cy="25"  />
+    <circle cx="215" cy="25"  />
+    <circle cx="225" cy="25"  />
+    <circle cx="235" cy="25"  />
+    <circle cx="245" cy="25"  />
+    <circle cx="255" cy="25"  />
+    <circle cx="265" cy="25"  />
+    <circle cx="275" cy="25"  />
+    <circle cx="285" cy="25"  />
+    <circle cx="295" cy="25"  />
+    <circle cx="305" cy="25"  />
+    <circle cx="10" cy="35"  />
+    <circle cx="20" cy="35"  />
+    <circle cx="30" cy="35"  />
+    <circle cx="40" cy="35"  />
+    <circle cx="50" cy="35"  />
+    <circle cx="60" cy="35"  />
+    <circle cx="70" cy="35"  />
+    <circle cx="80" cy="35"  />
+    <circle cx="90" cy="35"  />
+    <circle cx="100" cy="35"  />
+    <circle cx="110" cy="35"  />
+    <circle cx="120" cy="35"  />
+    <circle cx="130" cy="35"  />
+    <circle cx="140" cy="35"  />
+    <circle cx="150" cy="35"  />
+    <circle cx="160" cy="35"  />
+    <circle cx="170" cy="35"  />
+    <circle cx="180" cy="35"  />
+    <circle cx="190" cy="35"  />
+    <circle cx="200" cy="35"  />
+    <circle cx="210" cy="35"  />
+    <circle cx="220" cy="35"  />
+    <circle cx="230" cy="35"  />
+    <circle cx="240" cy="35"  />
+    <circle cx="250" cy="35"  />
+    <circle cx="260" cy="35"  />
+    <circle cx="270" cy="35"  />
+    <circle cx="280" cy="35"  />
+    <circle cx="290" cy="35"  />
+    <circle cx="300" cy="35"  />
+    <circle cx="5" cy="45"  />
+    <circle cx="15" cy="45"  />
+    <circle cx="25" cy="45"  />
+    <circle cx="35" cy="45"  />
+    <circle cx="45" cy="45"  />
+    <circle cx="55" cy="45"  />
+    <circle cx="65" cy="45"  />
+    <circle cx="75" cy="45"  />
+    <circle cx="85" cy="45"  />
+    <circle cx="95" cy="45"  />
+    <circle cx="105" cy="45"  />
+    <circle cx="115" cy="45"  />
+    <circle cx="125" cy="45"  />
+    <circle cx="135" cy="45"  />
+    <circle cx="145" cy="45"  />
+    <circle cx="155" cy="45"  />
+    <circle cx="165" cy="45"  />
+    <circle cx="175" cy="45"  />
+    <circle cx="185" cy="45"  />
+    <circle cx="195" cy="45"  />
+    <circle cx="205" cy="45"  />
+    <circle cx="215" cy="45"  />
+    <circle cx="225" cy="45"  />
+    <circle cx="235" cy="45"  />
+    <circle cx="245" cy="45"  />
+    <circle cx="255" cy="45"  />
+    <circle cx="265" cy="45"  />
+    <circle cx="275" cy="45"  />
+    <circle cx="285" cy="45"  />
+    <circle cx="295" cy="45"  />
+    <circle cx="305" cy="45"  />
+    <circle cx="10" cy="55"  />
+    <circle cx="20" cy="55"  />
+    <circle cx="30" cy="55"  />
+    <circle cx="40" cy="55"  />
+    <circle cx="50" cy="55"  />
+    <circle cx="60" cy="55"  />
+    <circle cx="70" cy="55"  />
+    <circle cx="80" cy="55"  />
+    <circle cx="90" cy="55"  />
+    <circle cx="100" cy="55"  />
+    <circle cx="110" cy="55"  />
+    <circle cx="120" cy="55"  />
+    <circle cx="130" cy="55"  />
+    <circle cx="140" cy="55"  />
+    <circle cx="150" cy="55"  />
+    <circle cx="160" cy="55"  />
+    <circle cx="170" cy="55"  />
+    <circle cx="180" cy="55"  />
+    <circle cx="190" cy="55"  />
+    <circle cx="200" cy="55"  />
+    <circle cx="210" cy="55"  />
+    <circle cx="220" cy="55"  />
+    <circle cx="230" cy="55"  />
+    <circle cx="240" cy="55"  />
+    <circle cx="250" cy="55"  />
+    <circle cx="260" cy="55"  />
+    <circle cx="270" cy="55"  />
+    <circle cx="280" cy="55"  />
+    <circle cx="290" cy="55"  />
+    <circle cx="300" cy="55"  />
+    <circle cx="5" cy="65"  />
+    <circle cx="15" cy="65"  />
+    <circle cx="25" cy="65"  />
+    <circle cx="35" cy="65"  />
+    <circle cx="45" cy="65"  />
+    <circle cx="55" cy="65"  />
+    <circle cx="65" cy="65"  />
+    <circle cx="75" cy="65"  />
+    <circle cx="85" cy="65"  />
+    <circle cx="95" cy="65"  />
+    <circle cx="105" cy="65"  />
+    <circle cx="115" cy="65"  />
+    <circle cx="125" cy="65"  />
+    <circle cx="135" cy="65"  />
+    <circle cx="145" cy="65"  />
+    <circle cx="155" cy="65"  />
+    <circle cx="165" cy="65"  />
+    <circle cx="175" cy="65"  />
+    <circle cx="185" cy="65"  />
+    <circle cx="195" cy="65"  />
+    <circle cx="205" cy="65"  />
+    <circle cx="215" cy="65"  />
+    <circle cx="225" cy="65"  />
+    <circle cx="235" cy="65"  />
+    <circle cx="245" cy="65"  />
+    <circle cx="255" cy="65"  />
+    <circle cx="265" cy="65"  />
+    <circle cx="275" cy="65"  />
+    <circle cx="285" cy="65"  />
+    <circle cx="295" cy="65"  />
+    <circle cx="305" cy="65"  />
+    <circle cx="5" cy="75"  />
+    <circle cx="15" cy="75"  />
+    <circle cx="25" cy="75"  />
+    <circle cx="35" cy="75"  />
+    <circle cx="45" cy="75"  />
+    <circle cx="55" cy="75"  />
+    <circle cx="65" cy="75"  />
+    <circle cx="75" cy="75"  />
+    <circle cx="85" cy="75"  />
+    <circle cx="95" cy="75"  />
+    <circle cx="105" cy="75"  />
+    <circle cx="115" cy="75"  />
+    <circle cx="125" cy="75"  />
+    <circle cx="135" cy="75"  />
+    <circle cx="145" cy="75"  />
+    <circle cx="155" cy="75"  />
+    <circle cx="165" cy="75"  />
+    <circle cx="175" cy="75"  />
+    <circle cx="185" cy="75"  />
+    <circle cx="195" cy="75"  />
+    <circle cx="205" cy="75"  />
+    <circle cx="215" cy="75"  />
+    <circle cx="225" cy="75"  />
+    <circle cx="235" cy="75"  />
+    <circle cx="245" cy="75"  />
+    <circle cx="255" cy="75"  />
+    <circle cx="265" cy="75"  />
+    <circle cx="275" cy="75"  />
+    <circle cx="285" cy="75"  />
+    <circle cx="295" cy="75"  />
+    <circle cx="305" cy="75"  />
+    <circle cx="10" cy="85"  />
+    <circle cx="20" cy="85"  />
+    <circle cx="30" cy="85"  />
+    <circle cx="40" cy="85"  />
+    <circle cx="50" cy="85"  />
+    <circle cx="60" cy="85"  />
+    <circle cx="70" cy="85"  />
+    <circle cx="80" cy="85"  />
+    <circle cx="90" cy="85"  />
+    <circle cx="100" cy="85"  />
+    <circle cx="110" cy="85"  />
+    <circle cx="120" cy="85"  />
+    <circle cx="130" cy="85"  />
+    <circle cx="140" cy="85"  />
+    <circle cx="150" cy="85"  />
+    <circle cx="160" cy="85"  />
+    <circle cx="170" cy="85"  />
+    <circle cx="180" cy="85"  />
+    <circle cx="190" cy="85"  />
+    <circle cx="200" cy="85"  />
+    <circle cx="210" cy="85"  />
+    <circle cx="220" cy="85"  />
+    <circle cx="230" cy="85"  />
+    <circle cx="240" cy="85"  />
+    <circle cx="250" cy="85"  />
+    <circle cx="260" cy="85"  />
+    <circle cx="270" cy="85"  />
+    <circle cx="280" cy="85"  />
+    <circle cx="290" cy="85"  />
+    <circle cx="300" cy="85"  />
+    <circle cx="5" cy="95"  />
+    <circle cx="15" cy="95"  />
+    <circle cx="25" cy="95"  />
+    <circle cx="35" cy="95"  />
+    <circle cx="45" cy="95"  />
+    <circle cx="55" cy="95"  />
+    <circle cx="65" cy="95"  />
+    <circle cx="75" cy="95"  />
+    <circle cx="85" cy="95"  />
+    <circle cx="95" cy="95"  />
+    <circle cx="105" cy="95"  />
+    <circle cx="115" cy="95"  />
+    <circle cx="125" cy="95"  />
+    <circle cx="135" cy="95"  />
+    <circle cx="145" cy="95"  />
+    <circle cx="155" cy="95"  />
+    <circle cx="165" cy="95"  />
+    <circle cx="175" cy="95"  />
+    <circle cx="185" cy="95"  />
+    <circle cx="195" cy="95"  />
+    <circle cx="205" cy="95"  />
+    <circle cx="215" cy="95"  />
+    <circle cx="225" cy="95"  />
+    <circle cx="235" cy="95"  />
+    <circle cx="245" cy="95"  />
+    <circle cx="255" cy="95"  />
+    <circle cx="265" cy="95"  />
+    <circle cx="275" cy="95"  />
+    <circle cx="285" cy="95"  />
+    <circle cx="295" cy="95"  />
+    <circle cx="305" cy="95"  />
+    <circle cx="10" cy="105"  />
+    <circle cx="20" cy="105"  />
+    <circle cx="30" cy="105"  />
+    <circle cx="40" cy="105"  />
+    <circle cx="50" cy="105"  />
+    <circle cx="60" cy="105"  />
+    <circle cx="70" cy="105"  />
+    <circle cx="80" cy="105"  />
+    <circle cx="90" cy="105"  />
+    <circle cx="100" cy="105"  />
+    <circle cx="110" cy="105"  />
+    <circle cx="120" cy="105"  />
+    <circle cx="130" cy="105"  />
+    <circle cx="140" cy="105"  />
+    <circle cx="150" cy="105"  />
+    <circle cx="160" cy="105"  />
+    <circle cx="170" cy="105"  />
+    <circle cx="180" cy="105"  />
+    <circle cx="190" cy="105"  />
+    <circle cx="200" cy="105"  />
+    <circle cx="210" cy="105"  />
+    <circle cx="220" cy="105"  />
+    <circle cx="230" cy="105"  />
+    <circle cx="240" cy="105"  />
+    <circle cx="250" cy="105"  />
+    <circle cx="260" cy="105"  />
+    <circle cx="270" cy="105"  />
+    <circle cx="280" cy="105"  />
+    <circle cx="290" cy="105"  />
+    <circle cx="300" cy="105"  />
+    <circle cx="5" cy="115"  />
+    <circle cx="15" cy="115"  />
+    <circle cx="25" cy="115"  />
+    <circle cx="35" cy="115"  />
+    <circle cx="45" cy="115"  />
+    <circle cx="55" cy="115"  />
+    <circle cx="65" cy="115"  />
+    <circle cx="75" cy="115"  />
+    <circle cx="85" cy="115"  />
+    <circle cx="95" cy="115"  />
+    <circle cx="105" cy="115"  />
+    <circle cx="115" cy="115"  />
+    <circle cx="125" cy="115"  />
+    <circle cx="135" cy="115"  />
+    <circle cx="145" cy="115"  />
+    <circle cx="155" cy="115"  />
+    <circle cx="165" cy="115"  />
+    <circle cx="175" cy="115"  />
+    <circle cx="185" cy="115"  />
+    <circle cx="195" cy="115"  />
+    <circle cx="205" cy="115"  />
+    <circle cx="215" cy="115"  />
+    <circle cx="225" cy="115"  />
+    <circle cx="235" cy="115"  />
+    <circle cx="245" cy="115"  />
+    <circle cx="255" cy="115"  />
+    <circle cx="265" cy="115"  />
+    <circle cx="275" cy="115"  />
+    <circle cx="285" cy="115"  />
+    <circle cx="295" cy="115"  />
+    <circle cx="305" cy="115"  />
+	</g>
+  <g transform="translate(15, 40)" fill="#6FF2E9" stroke-width="0" >
+    <circle cx="5" cy="5"  class="fadeIn" style="animation-delay: 20ms" />
+    <circle cx="15" cy="5"  class="fadeIn" style="animation-delay: 40ms" />
+    <circle cx="25" cy="5"  class="fadeIn" style="animation-delay: 60ms" />
+    <circle cx="35" cy="5"  class="fadeIn" style="animation-delay: 80ms" />
+    <circle cx="45" cy="5"  class="fadeIn" style="animation-delay: 100ms" />
+    <circle cx="55" cy="5"  class="fadeIn" style="animation-delay: 120ms" />
+    <circle cx="65" cy="5"  class="fadeIn" style="animation-delay: 140ms" />
+    <circle cx="75" cy="5"  class="fadeIn" style="animation-delay: 160ms" />
+    <circle cx="85" cy="5"  class="fadeIn" style="animation-delay: 180ms" />
+    <circle cx="95" cy="5"  class="fadeIn" style="animation-delay: 200ms" />
+    <circle cx="105" cy="5"  class="fadeIn" style="animation-delay: 220ms" />
+    <circle cx="115" cy="5"  class="fadeIn" style="animation-delay: 240ms" />
+    <circle cx="125" cy="5"  class="fadeIn" style="animation-delay: 260ms" />
+    <circle cx="135" cy="5"  class="fadeIn" style="animation-delay: 280ms" />
+    <circle cx="145" cy="5"  class="fadeIn" style="animation-delay: 300ms" />
+    <circle cx="155" cy="5"  class="fadeIn" style="animation-delay: 320ms" />
+    <circle cx="165" cy="5"  class="fadeIn" style="animation-delay: 340ms" />
+    <circle cx="175" cy="5"  class="fadeIn" style="animation-delay: 360ms" />
+    <circle cx="185" cy="5"  class="fadeIn" style="animation-delay: 380ms" />
+    <circle cx="195" cy="5"  class="fadeIn" style="animation-delay: 400ms" />
+    <circle cx="205" cy="5"  class="fadeIn" style="animation-delay: 420ms" />
+    <circle cx="215" cy="5"  class="fadeIn" style="animation-delay: 440ms" />
+    <circle cx="225" cy="5"  class="fadeIn" style="animation-delay: 460ms" />
+    <circle cx="235" cy="5"  class="fadeIn" style="animation-delay: 480ms" />
+    <circle cx="245" cy="5"  class="fadeIn" style="animation-delay: 500ms" />
+    <circle cx="255" cy="5"  class="fadeIn" style="animation-delay: 520ms" />
+    <circle cx="265" cy="5"  class="fadeIn" style="animation-delay: 540ms" />
+    <circle cx="275" cy="5"  class="fadeIn" style="animation-delay: 560ms" />
+    <circle cx="285" cy="5"  class="fadeIn" style="animation-delay: 580ms" />
+    <circle cx="295" cy="5"  class="fadeIn" style="animation-delay: 600ms" />
+    <circle cx="305" cy="5"  class="fadeIn" style="animation-delay: 620ms" />
+    <circle cx="20" cy="15"  class="fadeIn" style="animation-delay: 640ms" />
+    <circle cx="30" cy="15"  class="fadeIn" style="animation-delay: 660ms" />
+    <circle cx="40" cy="15"  class="fadeIn" style="animation-delay: 680ms" />
+    <circle cx="50" cy="15"  class="fadeIn" style="animation-delay: 700ms" />
+    <circle cx="60" cy="15"  class="fadeIn" style="animation-delay: 720ms" />
+    <circle cx="70" cy="15"  class="fadeIn" style="animation-delay: 740ms" />
+    <circle cx="80" cy="15"  class="fadeIn" style="animation-delay: 760ms" />
+    <circle cx="90" cy="15"  class="fadeIn" style="animation-delay: 780ms" />
+    <circle cx="100" cy="15"  class="fadeIn" style="animation-delay: 800ms" />
+    <circle cx="110" cy="15"  class="fadeIn" style="animation-delay: 820ms" />
+    <circle cx="120" cy="15"  class="fadeIn" style="animation-delay: 840ms" />
+    <circle cx="130" cy="15"  class="fadeIn" style="animation-delay: 860ms" />
+    <circle cx="140" cy="15"  class="fadeIn" style="animation-delay: 880ms" />
+    <circle cx="150" cy="15"  class="fadeIn" style="animation-delay: 900ms" />
+    <circle cx="160" cy="15"  class="fadeIn" style="animation-delay: 920ms" />
+    <circle cx="170" cy="15"  class="fadeIn" style="animation-delay: 940ms" />
+    <circle cx="180" cy="15"  class="fadeIn" style="animation-delay: 960ms" />
+    <circle cx="190" cy="15"  class="fadeIn" style="animation-delay: 980ms" />
+    <circle cx="200" cy="15"  class="fadeIn" style="animation-delay: 1000ms" />
+    <circle cx="210" cy="15"  class="fadeIn" style="animation-delay: 1020ms" />
+    <circle cx="220" cy="15"  class="fadeIn" style="animation-delay: 1040ms" />
+    <circle cx="230" cy="15"  class="fadeIn" style="animation-delay: 1060ms" />
+    <circle cx="240" cy="15"  class="fadeIn" style="animation-delay: 1080ms" />
+    <circle cx="250" cy="15"  class="fadeIn" style="animation-delay: 1100ms" />
+    <circle cx="260" cy="15"  class="fadeIn" style="animation-delay: 1120ms" />
+    <circle cx="270" cy="15"  class="fadeIn" style="animation-delay: 1140ms" />
+    <circle cx="280" cy="15"  class="fadeIn" style="animation-delay: 1160ms" />
+    <circle cx="290" cy="15"  class="fadeIn" style="animation-delay: 1180ms" />
+    <circle cx="5" cy="25"  class="fadeIn" style="animation-delay: 1200ms" />
+    <circle cx="15" cy="25"  class="fadeIn" style="animation-delay: 1220ms" />
+    <circle cx="25" cy="25"  class="fadeIn" style="animation-delay: 1240ms" />
+    <circle cx="35" cy="25"  class="fadeIn" style="animation-delay: 1260ms" />
+    <circle cx="45" cy="25"  class="fadeIn" style="animation-delay: 1280ms" />
+    <circle cx="55" cy="25"  class="fadeIn" style="animation-delay: 1300ms" />
+    <circle cx="65" cy="25"  class="fadeIn" style="animation-delay: 1320ms" />
+    <circle cx="75" cy="25"  class="fadeIn" style="animation-delay: 1340ms" />
+    <circle cx="85" cy="25"  class="fadeIn" style="animation-delay: 1360ms" />
+    <circle cx="95" cy="25"  class="fadeIn" style="animation-delay: 1380ms" />
+    <circle cx="105" cy="25"  class="fadeIn" style="animation-delay: 1400ms" />
+    <circle cx="115" cy="25"  class="fadeIn" style="animation-delay: 1420ms" />
+    <circle cx="125" cy="25"  class="fadeIn" style="animation-delay: 1440ms" />
+    <circle cx="135" cy="25"  class="fadeIn" style="animation-delay: 1460ms" />
+    <circle cx="145" cy="25"  class="fadeIn" style="animation-delay: 1480ms" />
+    <circle cx="155" cy="25"  class="fadeIn" style="animation-delay: 1500ms" />
+    <circle cx="165" cy="25"  class="fadeIn" style="animation-delay: 1520ms" />
+    <circle cx="175" cy="25"  class="fadeIn" style="animation-delay: 1540ms" />
+    <circle cx="185" cy="25"  class="fadeIn" style="animation-delay: 1560ms" />
+    <circle cx="195" cy="25"  class="fadeIn" style="animation-delay: 1580ms" />
+    <circle cx="205" cy="25"  class="fadeIn" style="animation-delay: 1600ms" />
+    <circle cx="215" cy="25"  class="fadeIn" style="animation-delay: 1620ms" />
+    <circle cx="225" cy="25"  class="fadeIn" style="animation-delay: 1640ms" />
+    <circle cx="235" cy="25"  class="fadeIn" style="animation-delay: 1660ms" />
+    <circle cx="245" cy="25"  class="fadeIn" style="animation-delay: 1680ms" />
+    <circle cx="255" cy="25"  class="fadeIn" style="animation-delay: 1700ms" />
+    <circle cx="265" cy="25"  class="fadeIn" style="animation-delay: 1720ms" />
+    <circle cx="275" cy="25"  class="fadeIn" style="animation-delay: 1740ms" />
+    <circle cx="285" cy="25"  class="fadeIn" style="animation-delay: 1760ms" />
+    <circle cx="295" cy="25"  class="fadeIn" style="animation-delay: 1780ms" />
+    <circle cx="305" cy="25"  class="fadeIn" style="animation-delay: 1800ms" />
+    <circle cx="10" cy="35"  class="fadeIn" style="animation-delay: 1820ms" />
+    <circle cx="20" cy="35"  class="fadeIn" style="animation-delay: 1840ms" />
+    <circle cx="30" cy="35"  class="fadeIn" style="animation-delay: 1860ms" />
+    <circle cx="40" cy="35"  class="fadeIn" style="animation-delay: 1880ms" />
+    <circle cx="50" cy="35"  class="fadeIn" style="animation-delay: 1900ms" />
+    <circle cx="60" cy="35"  class="fadeIn" style="animation-delay: 1920ms" />
+    <circle cx="70" cy="35"  class="fadeIn" style="animation-delay: 1940ms" />
+    <circle cx="80" cy="35"  class="fadeIn" style="animation-delay: 1960ms" />
+    <circle cx="90" cy="35"  class="fadeIn" style="animation-delay: 1980ms" />
+    <circle cx="100" cy="35"  class="fadeIn" style="animation-delay: 2000ms" />
+    <circle cx="110" cy="35"  class="fadeIn" style="animation-delay: 2020ms" />
+    <circle cx="120" cy="35"  class="fadeIn" style="animation-delay: 2040ms" />
+    <circle cx="130" cy="35"  class="fadeIn" style="animation-delay: 2060ms" />
+    <circle cx="140" cy="35"  class="fadeIn" style="animation-delay: 2080ms" />
+    <circle cx="150" cy="35"  class="fadeIn" style="animation-delay: 2100ms" />
+    <circle cx="160" cy="35"  class="fadeIn" style="animation-delay: 2120ms" />
+    <circle cx="170" cy="35"  class="fadeIn" style="animation-delay: 2140ms" />
+    <circle cx="180" cy="35"  class="fadeIn" style="animation-delay: 2160ms" />
+    <circle cx="190" cy="35"  class="fadeIn" style="animation-delay: 2180ms" />
+    <circle cx="200" cy="35"  class="fadeIn" style="animation-delay: 2200ms" />
+    <circle cx="210" cy="35"  class="fadeIn" style="animation-delay: 2220ms" />
+    <circle cx="220" cy="35"  class="fadeIn" style="animation-delay: 2240ms" />
+    <circle cx="230" cy="35"  class="fadeIn" style="animation-delay: 2260ms" />
+    <circle cx="240" cy="35"  class="fadeIn" style="animation-delay: 2280ms" />
+    <circle cx="250" cy="35"  class="fadeIn" style="animation-delay: 2300ms" />
+    <circle cx="260" cy="35"  class="fadeIn" style="animation-delay: 2320ms" />
+    <circle cx="270" cy="35"  class="fadeIn" style="animation-delay: 2340ms" />
+    <circle cx="280" cy="35"  class="fadeIn" style="animation-delay: 2360ms" />
+    <circle cx="290" cy="35"  class="fadeIn" style="animation-delay: 2380ms" />
+    <circle cx="300" cy="35"  class="fadeIn" style="animation-delay: 2400ms" />
+    <circle cx="5" cy="45"  class="fadeIn" style="animation-delay: 2420ms" />
+    <circle cx="15" cy="45"  class="fadeIn" style="animation-delay: 2440ms" />
+    <circle cx="25" cy="45"  class="fadeIn" style="animation-delay: 2460ms" />
+    <circle cx="35" cy="45"  class="fadeIn" style="animation-delay: 2480ms" />
+    <circle cx="45" cy="45"  class="fadeIn" style="animation-delay: 2500ms" />
+    <circle cx="55" cy="45"  class="fadeIn" style="animation-delay: 2520ms" />
+    <circle cx="65" cy="45"  class="fadeIn" style="animation-delay: 2540ms" />
+    <circle cx="75" cy="45"  class="fadeIn" style="animation-delay: 2560ms" />
+    <circle cx="85" cy="45"  class="fadeIn" style="animation-delay: 2580ms" />
+    <circle cx="95" cy="45"  class="fadeIn" style="animation-delay: 2600ms" />
+    <circle cx="105" cy="45"  class="fadeIn" style="animation-delay: 2620ms" />
+    <circle cx="115" cy="45"  class="fadeIn" style="animation-delay: 2640ms" />
+    <circle cx="125" cy="45"  class="fadeIn" style="animation-delay: 2660ms" />
+    <circle cx="135" cy="45"  class="fadeIn" style="animation-delay: 2680ms" />
+    <circle cx="145" cy="45"  class="fadeIn" style="animation-delay: 2700ms" />
+    <circle cx="155" cy="45"  class="fadeIn" style="animation-delay: 2720ms" />
+    <circle cx="165" cy="45"  class="fadeIn" style="animation-delay: 2740ms" />
+    <circle cx="175" cy="45"  class="fadeIn" style="animation-delay: 2760ms" />
+    <circle cx="185" cy="45"  class="fadeIn" style="animation-delay: 2780ms" />
+    <circle cx="195" cy="45"  class="fadeIn" style="animation-delay: 2800ms" />
+    <circle cx="205" cy="45"  class="fadeIn" style="animation-delay: 2820ms" />
+    <circle cx="215" cy="45"  class="fadeIn" style="animation-delay: 2840ms" />
+    <circle cx="225" cy="45"  class="fadeIn" style="animation-delay: 2860ms" />
+    <circle cx="235" cy="45"  class="fadeIn" style="animation-delay: 2880ms" />
+    <circle cx="245" cy="45"  class="fadeIn" style="animation-delay: 2900ms" />
+    <circle cx="255" cy="45"  class="fadeIn" style="animation-delay: 2920ms" />
+    <circle cx="265" cy="45"  class="fadeIn" style="animation-delay: 2940ms" />
+    <circle cx="275" cy="45"  class="fadeIn" style="animation-delay: 2960ms" />
+    <circle cx="285" cy="45"  class="fadeIn" style="animation-delay: 2980ms" />
+    <circle cx="295" cy="45"  class="fadeIn" style="animation-delay: 3000ms" />
+    <circle cx="305" cy="45"  class="fadeIn" style="animation-delay: 3020ms" />
+    <circle cx="10" cy="55"  class="fadeIn" style="animation-delay: 3040ms" />
+    <circle cx="20" cy="55"  class="fadeIn" style="animation-delay: 3060ms" />
+    <circle cx="30" cy="55"  class="fadeIn" style="animation-delay: 3080ms" />
+    <circle cx="40" cy="55"  class="fadeIn" style="animation-delay: 3100ms" />
+    <circle cx="50" cy="55"  class="fadeIn" style="animation-delay: 3120ms" />
+    <circle cx="60" cy="55"  class="fadeIn" style="animation-delay: 3140ms" />
+    <circle cx="70" cy="55"  class="fadeIn" style="animation-delay: 3160ms" />
+    <circle cx="80" cy="55"  class="fadeIn" style="animation-delay: 3180ms" />
+    <circle cx="90" cy="55"  class="fadeIn" style="animation-delay: 3200ms" />
+    <circle cx="100" cy="55"  class="fadeIn" style="animation-delay: 3220ms" />
+    <circle cx="110" cy="55"  class="fadeIn" style="animation-delay: 3240ms" />
+    <circle cx="120" cy="55"  class="fadeIn" style="animation-delay: 3260ms" />
+    <circle cx="130" cy="55"  class="fadeIn" style="animation-delay: 3280ms" />
+    <circle cx="140" cy="55"  class="fadeIn" style="animation-delay: 3300ms" />
+    <circle cx="150" cy="55"  class="fadeIn" style="animation-delay: 3320ms" />
+    <circle cx="160" cy="55"  class="fadeIn" style="animation-delay: 3340ms" />
+    <circle cx="170" cy="55"  class="fadeIn" style="animation-delay: 3360ms" />
+    <circle cx="180" cy="55"  class="fadeIn" style="animation-delay: 3380ms" />
+    <circle cx="190" cy="55"  class="fadeIn" style="animation-delay: 3400ms" />
+    <circle cx="200" cy="55"  class="fadeIn" style="animation-delay: 3420ms" />
+    <circle cx="210" cy="55"  class="fadeIn" style="animation-delay: 3440ms" />
+    <circle cx="220" cy="55"  class="fadeIn" style="animation-delay: 3460ms" />
+    <circle cx="230" cy="55"  class="fadeIn" style="animation-delay: 3480ms" />
+    <circle cx="240" cy="55"  class="fadeIn" style="animation-delay: 3500ms" />
+    <circle cx="250" cy="55"  class="fadeIn" style="animation-delay: 3520ms" />
+    <circle cx="260" cy="55"  class="fadeIn" style="animation-delay: 3540ms" />
+    <circle cx="270" cy="55"  class="fadeIn" style="animation-delay: 3560ms" />
+    <circle cx="280" cy="55"  class="fadeIn" style="animation-delay: 3580ms" />
+    <circle cx="290" cy="55"  class="fadeIn" style="animation-delay: 3600ms" />
+    <circle cx="300" cy="55"  class="fadeIn" style="animation-delay: 3620ms" />
+    <circle cx="5" cy="65"  class="fadeIn" style="animation-delay: 3640ms" />
+    <circle cx="15" cy="65"  class="fadeIn" style="animation-delay: 3660ms" />
+    <circle cx="25" cy="65"  class="fadeIn" style="animation-delay: 3680ms" />
+    <circle cx="35" cy="65"  class="fadeIn" style="animation-delay: 3700ms" />
+    <circle cx="45" cy="65"  class="fadeIn" style="animation-delay: 3720ms" />
+    <circle cx="55" cy="65"  class="fadeIn" style="animation-delay: 3740ms" />
+    <circle cx="65" cy="65"  class="fadeIn" style="animation-delay: 3760ms" />
+    <circle cx="75" cy="65"  class="fadeIn" style="animation-delay: 3780ms" />
+    <circle cx="85" cy="65"  class="fadeIn" style="animation-delay: 3800ms" />
+    <circle cx="95" cy="65"  class="fadeIn" style="animation-delay: 3820ms" />
+    <circle cx="105" cy="65"  class="fadeIn" style="animation-delay: 3840ms" />
+    <circle cx="115" cy="65"  class="fadeIn" style="animation-delay: 3860ms" />
+    <circle cx="125" cy="65"  class="fadeIn" style="animation-delay: 3880ms" />
+    <circle cx="135" cy="65"  class="fadeIn" style="animation-delay: 3900ms" />
+    <circle cx="145" cy="65"  class="fadeIn" style="animation-delay: 3920ms" />
+    <circle cx="155" cy="65"  class="fadeIn" style="animation-delay: 3940ms" />
+    <circle cx="165" cy="65"  class="fadeIn" style="animation-delay: 3960ms" />
+    <circle cx="175" cy="65"  class="fadeIn" style="animation-delay: 3980ms" />
+    <circle cx="185" cy="65"  class="fadeIn" style="animation-delay: 4000ms" />
+    <circle cx="195" cy="65"  class="fadeIn" style="animation-delay: 4020ms" />
+    <circle cx="205" cy="65"  class="fadeIn" style="animation-delay: 4040ms" />
+    <circle cx="215" cy="65"  class="fadeIn" style="animation-delay: 4060ms" />
+    <circle cx="225" cy="65"  class="fadeIn" style="animation-delay: 4080ms" />
+    <circle cx="235" cy="65"  class="fadeIn" style="animation-delay: 4100ms" />
+    <circle cx="245" cy="65"  class="fadeIn" style="animation-delay: 4120ms" />
+    <circle cx="255" cy="65"  class="fadeIn" style="animation-delay: 4140ms" />
+    <circle cx="265" cy="65"  class="fadeIn" style="animation-delay: 4160ms" />
+    <circle cx="275" cy="65"  class="fadeIn" style="animation-delay: 4180ms" />
+    <circle cx="285" cy="65"  class="fadeIn" style="animation-delay: 4200ms" />
+    <circle cx="295" cy="65"  class="fadeIn" style="animation-delay: 4220ms" />
+    <circle cx="305" cy="65"  class="fadeIn" style="animation-delay: 4240ms" />
+    <circle cx="5" cy="75"  class="fadeIn" style="animation-delay: 4260ms" />
+    <circle cx="15" cy="75"  class="fadeIn" style="animation-delay: 4280ms" />
+    <circle cx="25" cy="75"  class="fadeIn" style="animation-delay: 4300ms" />
+    <circle cx="35" cy="75"  class="fadeIn" style="animation-delay: 4320ms" />
+    <circle cx="45" cy="75"  class="fadeIn" style="animation-delay: 4340ms" />
+    <circle cx="55" cy="75"  class="fadeIn" style="animation-delay: 4360ms" />
+    <circle cx="65" cy="75"  class="fadeIn" style="animation-delay: 4380ms" />
+    <circle cx="75" cy="75"  class="fadeIn" style="animation-delay: 4400ms" />
+    <circle cx="85" cy="75"  class="fadeIn" style="animation-delay: 4420ms" />
+    <circle cx="95" cy="75"  class="fadeIn" style="animation-delay: 4440ms" />
+    <circle cx="105" cy="75"  class="fadeIn" style="animation-delay: 4460ms" />
+    <circle cx="115" cy="75"  class="fadeIn" style="animation-delay: 4480ms" />
+    <circle cx="125" cy="75"  class="fadeIn" style="animation-delay: 4500ms" />
+    <circle cx="135" cy="75"  class="fadeIn" style="animation-delay: 4520ms" />
+    <circle cx="145" cy="75"  class="fadeIn" style="animation-delay: 4540ms" />
+    <circle cx="155" cy="75"  class="fadeIn" style="animation-delay: 4560ms" />
+    <circle cx="165" cy="75"  class="fadeIn" style="animation-delay: 4580ms" />
+    <circle cx="175" cy="75"  class="fadeIn" style="animation-delay: 4600ms" />
+    <circle cx="185" cy="75"  class="fadeIn" style="animation-delay: 4620ms" />
+    <circle cx="195" cy="75"  class="fadeIn" style="animation-delay: 4640ms" />
+    <circle cx="205" cy="75"  class="fadeIn" style="animation-delay: 4660ms" />
+    <circle cx="215" cy="75"  class="fadeIn" style="animation-delay: 4680ms" />
+    <circle cx="225" cy="75"  class="fadeIn" style="animation-delay: 4700ms" />
+    <circle cx="235" cy="75"  class="fadeIn" style="animation-delay: 4720ms" />
+    <circle cx="245" cy="75"  class="fadeIn" style="animation-delay: 4740ms" />
+    <circle cx="255" cy="75"  class="fadeIn" style="animation-delay: 4760ms" />
+    <circle cx="265" cy="75"  class="fadeIn" style="animation-delay: 4780ms" />
+    <circle cx="275" cy="75"  class="fadeIn" style="animation-delay: 4800ms" />
+    <circle cx="285" cy="75"  class="fadeIn" style="animation-delay: 4820ms" />
+    <circle cx="295" cy="75"  class="fadeIn" style="animation-delay: 4840ms" />
+    <circle cx="305" cy="75"  class="fadeIn" style="animation-delay: 4860ms" />
+    <circle cx="10" cy="85"  class="fadeIn" style="animation-delay: 4880ms" />
+    <circle cx="20" cy="85"  class="fadeIn" style="animation-delay: 4900ms" />
+    <circle cx="30" cy="85"  class="fadeIn" style="animation-delay: 4920ms" />
+    <circle cx="40" cy="85"  class="fadeIn" style="animation-delay: 4940ms" />
+    <circle cx="50" cy="85"  class="fadeIn" style="animation-delay: 4960ms" />
+    <circle cx="60" cy="85"  class="fadeIn" style="animation-delay: 4980ms" />
+    <circle cx="70" cy="85"  class="fadeIn" style="animation-delay: 5000ms" />
+    <circle cx="80" cy="85"  class="fadeIn" style="animation-delay: 5020ms" />
+    <circle cx="90" cy="85"  class="fadeIn" style="animation-delay: 5040ms" />
+    <circle cx="100" cy="85"  class="fadeIn" style="animation-delay: 5060ms" />
+    <circle cx="110" cy="85"  class="fadeIn" style="animation-delay: 5080ms" />
+    <circle cx="120" cy="85"  class="fadeIn" style="animation-delay: 5100ms" />
+    <circle cx="130" cy="85"  class="fadeIn" style="animation-delay: 5120ms" />
+    <circle cx="140" cy="85"  class="fadeIn" style="animation-delay: 5140ms" />
+    <circle cx="150" cy="85"  class="fadeIn" style="animation-delay: 5160ms" />
+    <circle cx="160" cy="85"  class="fadeIn" style="animation-delay: 5180ms" />
+    <circle cx="170" cy="85"  class="fadeIn" style="animation-delay: 5200ms" />
+    <circle cx="180" cy="85"  class="fadeIn" style="animation-delay: 5220ms" />
+    <circle cx="190" cy="85"  class="fadeIn" style="animation-delay: 5240ms" />
+    <circle cx="200" cy="85"  class="fadeIn" style="animation-delay: 5260ms" />
+    <circle cx="210" cy="85"  class="fadeIn" style="animation-delay: 5280ms" />
+    <circle cx="220" cy="85"  class="fadeIn" style="animation-delay: 5300ms" />
+    <circle cx="230" cy="85"  class="fadeIn" style="animation-delay: 5320ms" />
+    <circle cx="240" cy="85"  class="fadeIn" style="animation-delay: 5340ms" />
+    <circle cx="250" cy="85"  class="fadeIn" style="animation-delay: 5360ms" />
+    <circle cx="260" cy="85"  class="fadeIn" style="animation-delay: 5380ms" />
+    <circle cx="270" cy="85"  class="fadeIn" style="animation-delay: 5400ms" />
+    <circle cx="280" cy="85"  class="fadeIn" style="animation-delay: 5420ms" />
+    <circle cx="290" cy="85"  class="fadeIn" style="animation-delay: 5440ms" />
+    <circle cx="300" cy="85"  class="fadeIn" style="animation-delay: 5460ms" />
+    <circle cx="5" cy="95"  class="fadeIn" style="animation-delay: 5480ms" />
+    <circle cx="15" cy="95"  class="fadeIn" style="animation-delay: 5500ms" />
+    <circle cx="25" cy="95"  class="fadeIn" style="animation-delay: 5520ms" />
+    <circle cx="35" cy="95"  class="fadeIn" style="animation-delay: 5540ms" />
+    <circle cx="45" cy="95"  class="fadeIn" style="animation-delay: 5560ms" />
+    <circle cx="55" cy="95"  class="fadeIn" style="animation-delay: 5580ms" />
+    <circle cx="65" cy="95"  class="fadeIn" style="animation-delay: 5600ms" />
+    <circle cx="75" cy="95"  class="fadeIn" style="animation-delay: 5620ms" />
+    <circle cx="85" cy="95"  class="fadeIn" style="animation-delay: 5640ms" />
+    <circle cx="95" cy="95"  class="fadeIn" style="animation-delay: 5660ms" />
+    <circle cx="105" cy="95"  class="fadeIn" style="animation-delay: 5680ms" />
+    <circle cx="115" cy="95"  class="fadeIn" style="animation-delay: 5700ms" />
+    <circle cx="125" cy="95"  class="fadeIn" style="animation-delay: 5720ms" />
+    <circle cx="135" cy="95"  class="fadeIn" style="animation-delay: 5740ms" />
+    <circle cx="145" cy="95"  class="fadeIn" style="animation-delay: 5760ms" />
+    <circle cx="155" cy="95"  class="fadeIn" style="animation-delay: 5780ms" />
+    <circle cx="165" cy="95"  class="fadeIn" style="animation-delay: 5800ms" />
+    <circle cx="175" cy="95"  class="fadeIn" style="animation-delay: 5820ms" />
+    <circle cx="185" cy="95"  class="fadeIn" style="animation-delay: 5840ms" />
+    <circle cx="195" cy="95"  class="fadeIn" style="animation-delay: 5860ms" />
+    <circle cx="205" cy="95"  class="fadeIn" style="animation-delay: 5880ms" />
+    <circle cx="215" cy="95"  class="fadeIn" style="animation-delay: 5900ms" />
+    <circle cx="225" cy="95"  class="fadeIn" style="animation-delay: 5920ms" />
+    <circle cx="235" cy="95"  class="fadeIn" style="animation-delay: 5940ms" />
+    <circle cx="245" cy="95"  class="fadeIn" style="animation-delay: 5960ms" />
+    <circle cx="255" cy="95"  class="fadeIn" style="animation-delay: 5980ms" />
+    <circle cx="265" cy="95"  class="fadeIn" style="animation-delay: 6000ms" />
+    <circle cx="275" cy="95"  class="fadeIn" style="animation-delay: 6020ms" />
+    <circle cx="285" cy="95"  class="fadeIn" style="animation-delay: 6040ms" />
+    <circle cx="295" cy="95"  class="fadeIn" style="animation-delay: 6060ms" />
+    <circle cx="305" cy="95"  class="fadeIn" style="animation-delay: 6080ms" />
+    <circle cx="10" cy="105"  class="fadeIn" style="animation-delay: 6100ms" />
+    <circle cx="20" cy="105"  class="fadeIn" style="animation-delay: 6120ms" />
+    <circle cx="30" cy="105"  class="fadeIn" style="animation-delay: 6140ms" />
+    <circle cx="40" cy="105"  class="fadeIn" style="animation-delay: 6160ms" />
+    <circle cx="50" cy="105"  class="fadeIn" style="animation-delay: 6180ms" />
+    <circle cx="60" cy="105"  class="fadeIn" style="animation-delay: 6200ms" />
+    <circle cx="70" cy="105"  class="fadeIn" style="animation-delay: 6220ms" />
+    <circle cx="80" cy="105"  class="fadeIn" style="animation-delay: 6240ms" />
+    <circle cx="90" cy="105"  class="fadeIn" style="animation-delay: 6260ms" />
+    <circle cx="100" cy="105"  class="fadeIn" style="animation-delay: 6280ms" />
+    <circle cx="110" cy="105"  class="fadeIn" style="animation-delay: 6300ms" />
+    <circle cx="120" cy="105"  class="fadeIn" style="animation-delay: 6320ms" />
+    <circle cx="130" cy="105"  class="fadeIn" style="animation-delay: 6340ms" />
+    <circle cx="140" cy="105"  class="fadeIn" style="animation-delay: 6360ms" />
+    <circle cx="150" cy="105"  class="fadeIn" style="animation-delay: 6380ms" />
+    <circle cx="160" cy="105"  class="fadeIn" style="animation-delay: 6400ms" />
+    <circle cx="170" cy="105"  class="fadeIn" style="animation-delay: 6420ms" />
+    <circle cx="180" cy="105"  class="fadeIn" style="animation-delay: 6440ms" />
+    <circle cx="190" cy="105"  class="fadeIn" style="animation-delay: 6460ms" />
+    <circle cx="200" cy="105"  class="fadeIn" style="animation-delay: 6480ms" />
+    <circle cx="210" cy="105"  class="fadeIn" style="animation-delay: 6500ms" />
+    <circle cx="220" cy="105"  class="fadeIn" style="animation-delay: 6520ms" />
+    <circle cx="230" cy="105"  class="fadeIn" style="animation-delay: 6540ms" />
+    <circle cx="240" cy="105"  class="fadeIn" style="animation-delay: 6560ms" />
+    <circle cx="250" cy="105"  class="blink" style="animation-delay: 6680ms" />
+	</g>
+  <style>
+    circle {
+      r: 2.5;
+    }
+    text {
+      font-family: DIN Condensed, Arial Narrow, Helvetica Neue, Arial, sans-serif;
+    }
+    text.text-year {
+      text-anchor: start;
+      dominant-baseline: middle;
+      font-size: 18px;
+      fill: #fff;
+    }
+    text.text-percent {
+      text-anchor: middle;
+      dominant-baseline: middle;
+      font-size: 24px;
+      fill: #ff0000;
+    }
+    text.text-progress {
+      text-anchor: end;
+      dominant-baseline: middle;
+      font-size: 18px;
+      fill: #AAFF55;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; r: 2.5; }
+      25% { opacity: 1; r: 3.5; }
+      75% { opacity: 1; r: 3.5; }
+      100% { opacity: 1; r: 2.5; }
+    }
+    .blink {
+      opacity: 0;
+      animation: blink 1s linear infinite;
+    }
+    .fadeIn {
+      opacity: 0;
+      animation: fadeIn 0.8s linear;
+      animation-fill-mode: forwards;
+    }
+  </style>
+</svg>
