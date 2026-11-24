@@ -1,16 +1,59 @@
 name: Daily
+
 on:
   push:
     branches:
       - master
+    paths:
+      - '.github/workflows/daily.yml'
+      - 'scripts/generate-profile-assets.cjs'
+      - 'package.json'
+      - 'package-lock.json'
   schedule:
-    # - cron: "0 0 * * *"
-    - cron: "0 16 * * *"
+    - cron: '17 16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+
 jobs:
-  run:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: wow-actions/purge-readme@v1
-      - run: |
-          curl https://bubkoo-server.vercel.app/365dots
-          curl https://bubkoo-server.vercel.app/daily-saying
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - run: npm ci
+      - run: npm run generate -- "$RUNNER_TEMP/profile-assets"
+      - name: Validate SVGs
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          from xml.etree import ElementTree
+          for name in ('daily-saying.svg', '365dots.svg'):
+              path = Path(os.environ['RUNNER_TEMP']) / 'profile-assets' / name
+              root = ElementTree.parse(path).getroot()
+              if root.tag != '{http://www.w3.org/2000/svg}svg' or len(root) == 0:
+                  raise ValueError(f'Invalid SVG: {path}')
+          PY
+      - uses: actions/checkout@v5
+        with:
+          ref: profile-assets
+          path: published
+      - name: Publish both images
+        working-directory: published
+        run: |
+          cp "$RUNNER_TEMP/profile-assets/"*.svg .
+          git add daily-saying.svg 365dots.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update profile images'
+          git push origin HEAD:profile-assets

@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://bubkoo-server.vercel.app/daily-saying" width="457" />
-  <img src="https://bubkoo-server.vercel.app/365dots" width="381"/>
+  <img src="https://raw.githubusercontent.com/bubkoo/bubkoo/profile-assets/daily-saying.svg" alt="Daily saying" width="457" />
+  <img src="https://raw.githubusercontent.com/bubkoo/bubkoo/profile-assets/365dots.svg" alt="Year progress" width="381"/>
 </p>
 
 <!-- <p align="center">

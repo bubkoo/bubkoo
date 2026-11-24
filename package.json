@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate-profile-assets.cjs"
+  },
+  "dependencies": {
+    "@365dots/svg": "1.0.0"
+  },
+  "name": "bubkoo-profile"
+}
