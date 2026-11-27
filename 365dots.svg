@@ -3,7 +3,7 @@
   <g transform="translate(0, 24)">
     <text class="text-year" transform="translate(15, 0)">2026</text>
     <text class="text-percent" transform="translate(170, 0)">91%</text>
-    <text class="text-progress" transform="translate(325, 0)">331/365</text>
+    <text class="text-progress" transform="translate(325, 0)">332/365</text>
   </g>
   <g transform="translate(15, 40)" fill="#6FF2E9" stroke-width="0" opacity="0.3" >
     <circle cx="5" cy="5"  />
@@ -703,7 +703,8 @@
     <circle cx="240" cy="105"  class="fadeIn" style="animation-delay: 6560ms" />
     <circle cx="250" cy="105"  class="fadeIn" style="animation-delay: 6580ms" />
     <circle cx="260" cy="105"  class="fadeIn" style="animation-delay: 6600ms" />
-    <circle cx="270" cy="105"  class="blink" style="animation-delay: 6720ms" />
+    <circle cx="270" cy="105"  class="fadeIn" style="animation-delay: 6620ms" />
+    <circle cx="280" cy="105"  class="blink" style="animation-delay: 6740ms" />
 	</g>
   <style>
     circle {
